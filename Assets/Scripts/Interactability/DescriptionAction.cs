@@ -19,8 +19,8 @@ public class DescriptionAction : Interaction
     
     public override void Execute()
     {
-        if (_audioClip != null) Messaging<PlayAudio>.Trigger(_audioClip, _group);
-        Messaging<ShowNarrative>.Trigger(_description);
+        if (_audioClip != null) Messaging<PlayAudio>.Trigger?.Invoke(_audioClip, _group);
+        Messaging<ShowNarrative>.Trigger?.Invoke(_description);
     }
 
     #endregion

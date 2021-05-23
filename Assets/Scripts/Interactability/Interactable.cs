@@ -13,12 +13,20 @@ public class Interactable : MonoBehaviour
     float _interactRadius = 1.5f;
     [SerializeField, Tooltip("Does this interactable have a front? The target navigation point will be calculated to be in front of the interactable")]
     bool _hasFront = false;
-    [SerializeField, Tooltip("The action(s) to perform once the character has reached the target")]
-    Interaction[] _interactions;
+
+    [SerializeField] InteractionMenuOption[] _interactionMenuOptions;
+
+    public InteractionMenuOption[] MenuOptions => _interactionMenuOptions;
 
     #endregion
 
     #region Unity Methods
+
+    private void OnMouseDown()
+    {
+        if (!Input.GetMouseButtonDown(0)) return;
+        Messaging<InteractableClicked>.Trigger?.Invoke(this, Input.mousePosition);
+    }
 
     private void OnDrawGizmosSelected()
     {
@@ -50,15 +58,11 @@ public class Interactable : MonoBehaviour
         return transform.position + (source.position - transform.position).normalized * _interactRadius;
     }
 
-    public void StartInteraction(CharacterMovementController movementController)
+    public void StartInteraction(CharacterMovementController movementController, InteractionMenuOption option)
     {
         movementController.SetLookDirection(transform.position);
-        _interactions.RunInteractions();
+        option.Interactions.RunInteractions();
     }
 
     #endregion
-}
-public static class InteractableExtensions
-{
-    public static Interactable GetInteractable(this Transform transform, bool includeInactive = false) => transform.GetComponent<Interactable>();
 }
