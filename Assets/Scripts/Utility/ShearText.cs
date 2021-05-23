@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ShearText : Text
@@ -14,10 +9,10 @@ public class ShearText : Text
 
     #endregion
 
+    #region Override Methods
+    
     protected override void OnPopulateMesh(VertexHelper toFill)
     {
-        _shear = new Vector2(0f, 15f);
-
         base.OnPopulateMesh(toFill);
 
         var width = rectTransform.rect.width;
@@ -35,4 +30,6 @@ public class ShearText : Text
             toFill.SetUIVertex(v, i);
         }
     }
+
+    #endregion
 }
