@@ -33,7 +33,7 @@ public class CharacterMovementController : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonDown(0)) OnClick();
-        
+
         if (!_agent.isStopped && AgentHasArrived())
         {
             _agent.isStopped = true;
@@ -68,7 +68,7 @@ public class CharacterMovementController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _interactionMask))
         {
             var target = hit.point;
-            
+
             _currentInteractable = hit.transform.GetInteractable();
             if (_currentInteractable != null)
                 target = _currentInteractable.InteractTarget(transform);
@@ -95,10 +95,9 @@ public class CharacterMovementController : MonoBehaviour
 
     private bool KeepTurning()
     {
-        var myAngles = transform.rotation.eulerAngles;
-        var targetAngles = _targetRotation.eulerAngles;
-        var dot = Vector3.Dot(myAngles.normalized, targetAngles.normalized);
-        return dot + _interactLookRotationTolerance < 1f;
+        var myRot = transform.rotation.eulerAngles.y;
+        var trgRot = _targetRotation.eulerAngles.y;
+        return Mathf.Abs(myRot - trgRot) > _interactLookRotationTolerance;
     }
 
     #endregion

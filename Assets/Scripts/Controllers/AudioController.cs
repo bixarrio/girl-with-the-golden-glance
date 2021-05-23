@@ -1,0 +1,101 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.Audio;
+
+public class AudioController : MonoBehaviour
+{
+    #region Properties and Fields
+
+    [SerializeField] AudioMixerGroup _musicMixerGroup;
+    [SerializeField] AudioMixerGroup _narrativeMixerGroup;
+    [SerializeField] AudioMixerGroup _sfxMixerGroup;
+
+    [SerializeField] int _sfxSourceInstances = 5;
+
+    private AudioSource _musicSource;
+    private AudioSource _narrativeSource;
+    private Queue<AudioSource> _sfxSources = new Queue<AudioSource>();
+
+    #endregion
+
+    #region Unity Methods
+
+    private void Start() => Init();
+    private void OnEnable() => HookMessages();
+    private void OnDisable() => UnhookMessages();
+
+    #endregion
+
+    #region Private Methods
+
+    private void HookMessages()
+    {
+        Messaging<PlayAudio>.Register(PlayAudio);
+    }
+    private void UnhookMessages()
+    {
+        Messaging<PlayAudio>.Unregister(PlayAudio);
+    }
+
+    private void Init()
+    {
+        _musicSource = CreateAudioSource("MusicAudioSource", _musicMixerGroup, 0f, true);
+        _narrativeSource = CreateAudioSource("NarrativeAudioSource", _narrativeMixerGroup, 0f, false);
+        for (int i = 0; i < _sfxSourceInstances; i++)
+            _sfxSources.Enqueue(CreateAudioSource($"SFXAudioSource{i:00}", _sfxMixerGroup, 1f, false));
+    }
+
+    private AudioSource CreateAudioSource(string name, AudioMixerGroup group, float spatialBlend, bool loop)
+    {
+        var audioSource = new GameObject(name).AddComponent<AudioSource>();
+
+        audioSource.outputAudioMixerGroup = group;
+        audioSource.spatialBlend = spatialBlend;
+        audioSource.loop = loop;
+
+        audioSource.transform.SetParent(transform);
+
+        return audioSource;
+    }
+
+    private void PlayAudio(AudioClip audioClip, AudioGroups group, Transform audioLocation = null)
+    {
+        // This could be done better
+        switch (group)
+        {
+            case AudioGroups.SFX: PlaySFX(audioClip, audioLocation); break;
+            case AudioGroups.Music: PlayMusic(audioClip); break;
+            case AudioGroups.Narrative: PlayNarrative(audioClip); break;
+        }
+    }
+
+    private void PlaySFX(AudioClip audioClip, Transform audioLocation)
+    {
+        AudioSource audioSource;
+
+        if (!_sfxSources.Any()) audioSource = CreateAudioSource($"SFXAudioSource{_sfxSourceInstances++:00}", _sfxMixerGroup, 1f, false);
+        else audioSource = _sfxSources.Dequeue();
+
+        audioSource.transform.position = audioLocation != null ? audioLocation.position : Vector3.zero;
+        audioSource.clip = audioClip;
+        audioSource.Play();
+
+        _sfxSources.Enqueue(audioSource);
+    }
+    private void PlayMusic(AudioClip audioClip)
+    {
+        if (_musicSource.clip == audioClip) return;
+
+        _musicSource.clip = audioClip;
+        _musicSource.Play();
+    }
+    private void PlayNarrative(AudioClip audioClip)
+    {
+        _narrativeSource.clip = audioClip;
+        _narrativeSource.Play();
+    }
+
+    #endregion
+}
