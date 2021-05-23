@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
     [SerializeField, Tooltip("Does this interactable have a front? The target navigation point will be calculated to be in front of the interactable")]
     bool _hasFront = false;
     [SerializeField, Tooltip("The action(s) to perform once the character has reached the target")]
-    Action[] _interactActions;
+    Interaction[] _interactions;
 
     #endregion
 
@@ -53,7 +53,7 @@ public class Interactable : MonoBehaviour
     public void StartInteraction(CharacterMovementController movementController)
     {
         movementController.SetLookDirection(transform.position);
-        _interactActions.RunActions();
+        _interactions.RunInteractions();
     }
 
     #endregion

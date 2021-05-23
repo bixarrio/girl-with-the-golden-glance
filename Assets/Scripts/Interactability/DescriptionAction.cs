@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class DescriptionAction : Action
+public class DescriptionAction : Interaction
 {
     #region Properties and Fields
     

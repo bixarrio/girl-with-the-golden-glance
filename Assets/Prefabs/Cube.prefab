@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactRadius: 1.5
   _hasFront: 1
-  _interactActions:
+  _interactions:
   - {fileID: 2337527546377446281}
 --- !u!1 &1122478636137441934
 GameObject:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _description: Still a box
-  _audioClip: {fileID: 0}
+  _audioClip: {fileID: 8300000, guid: 873d71f9b92ae3643ac6b8134aadb7d4, type: 3}
   _group: 1
 --- !u!1 &4291011181129456596
 GameObject:
@@ -347,6 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b08d9657b28054aad800c0c7167dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _description: Perhaps I should try something else
-  _audioClip: {fileID: 0}
+  _description: I should try something else
+  _audioClip: {fileID: 8300000, guid: 2abfe645ea2edda48b4c05e3c22feecb, type: 3}
   _group: 1

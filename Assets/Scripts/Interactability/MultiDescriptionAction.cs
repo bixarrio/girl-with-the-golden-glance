@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MultiDescriptionAction : Action
+public abstract class MultiDescriptionAction : Interaction
 {
     #region Properties and Fields
 
