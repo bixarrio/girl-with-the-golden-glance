@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 9421098}
   - component: {fileID: 9421097}
   m_Layer: 5
-  m_Name: The Day I Met
+  m_Name: Buckshot "Bucky" Jones in
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,10 +182,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 52e66c439255c2a428ee8a3f86b3185b, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE DAY I MET
+  m_Text: BUCKSHOT "BUCKY" JONES IN
 --- !u!222 &9421098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1372,8 +1372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 0, y: -280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751985558
 MonoBehaviour:
@@ -1412,18 +1412,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7fc08846b3286e448b2d58c1933a257e, type: 3}
-    m_FontSize: 100
+    m_FontSize: 105
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 100
+    m_MaxSize: 120
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Girl With The Golden Glance
+  m_Text: '"The Girl With The Golden Glance"'
   _shear: {x: 0, y: 15}
 --- !u!222 &1751985560
 CanvasRenderer:

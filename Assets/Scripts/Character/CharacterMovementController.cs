@@ -107,11 +107,12 @@ public class CharacterMovementController : MonoBehaviour
             {
                 // Tell the system to close the menu if it is open
                 Messaging<CloseMenu>.Trigger?.Invoke();
+                _currentInteractable = null;
+                _currentInteractionMenuOption = null;
                 SetDestination(hit.point);
             }
         }
     }
-
 
     private void StartInteraction()
     {
