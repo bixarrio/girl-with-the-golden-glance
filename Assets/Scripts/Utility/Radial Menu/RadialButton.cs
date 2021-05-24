@@ -26,8 +26,8 @@ public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Messaging<CloseMenu>.Trigger?.Invoke();
         CharacterMovementController.Instance.SetInteractionTarget(_interactable, _option);
+        Messaging<CloseMenu>.Trigger?.Invoke();
     }
     public void OnPointerEnter(PointerEventData eventData)
         => transform.localScale = new Vector3(1.1f, 1.1f, 0f);

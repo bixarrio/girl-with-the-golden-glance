@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -25,6 +26,7 @@ public class Interactable : MonoBehaviour
     private void OnMouseDown()
     {
         if (!Input.GetMouseButtonDown(0)) return;
+        if (EventSystem.current.IsPointerOverGameObject()) return;
         Messaging<InteractableClicked>.Trigger?.Invoke(this, Input.mousePosition);
     }
 
