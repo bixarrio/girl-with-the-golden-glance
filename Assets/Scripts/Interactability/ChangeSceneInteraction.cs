@@ -15,8 +15,11 @@ public class ChangeSceneInteraction : Interaction
 
     private void OnDrawGizmosSelected()
     {
+        var myPos = transform.position;
+        myPos.y = 0;
+
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, _characterSpawnPosition);
+        Gizmos.DrawLine(myPos, _characterSpawnPosition);
 
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(_characterSpawnPosition, 0.125f);
