@@ -7,6 +7,7 @@ public class RadialMenu : MonoBehaviour
     #region Properties and Fields
 
     [SerializeField] float _buttonRadius = 16f;
+    [SerializeField] float _flyoutSpeed = 0.1f;
     [SerializeField] RadialButton _buttonPrefab;
 
     #endregion
@@ -27,13 +28,10 @@ public class RadialMenu : MonoBehaviour
             var button = Instantiate(_buttonPrefab) as RadialButton;
             button.transform.SetParent(transform);
 
-            var theta = (2f * Mathf.PI / interactable.MenuOptions.Length) * i;
-            var xPos = Mathf.Cos(theta);
-            var yPos = Mathf.Sin(theta);
-            button.transform.localPosition = new Vector3(xPos, yPos, 0f) * _buttonRadius;
-
             button.SetIcon(interactable.MenuOptions[i].MenuIcon);
             button.SetMyData(this, interactable, interactable.MenuOptions[i]);
+
+            StartCoroutine(FlyoutButton(button, GetButtonPosition(i, interactable.MenuOptions.Length)));
         }
     }
 
@@ -48,6 +46,38 @@ public class RadialMenu : MonoBehaviour
     private void UnhookMessages()
     {
         Messaging<CloseMenu>.Unregister(CloseMenu);
+    }
+
+    private Vector2 GetButtonPosition(int index, int count)
+    {
+        const float TAU = 6.28318530718f; // Circumference of a circle in radians
+        const float RAD90 = TAU / 4f; // 90 degrees in radians
+
+        var theta = (TAU / count) * index + RAD90;
+        var xPos = Mathf.Cos(theta);
+        var yPos = Mathf.Sin(theta);
+        return new Vector2(xPos, yPos) * _buttonRadius;
+    }
+
+    private IEnumerator FlyoutButton(RadialButton button, Vector3 targetPos)
+    {
+        var timer = 0f;
+        button.transform.localPosition = Vector3.zero;
+        button.transform.localScale = Vector3.zero;
+        var time = 0f;
+        while ((time = timer / _flyoutSpeed) <= 1f)
+        {
+            var pos = Vector3.Lerp(Vector3.zero, targetPos, time);
+            var size = Vector3.Lerp(Vector3.zero, Vector3.one, time);
+            
+            button.transform.localPosition = pos;
+            button.transform.localScale = size;
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        button.transform.localPosition = targetPos;
+        button.transform.localScale = Vector3.one;
     }
 
     private void CloseMenu() => Destroy(gameObject);
