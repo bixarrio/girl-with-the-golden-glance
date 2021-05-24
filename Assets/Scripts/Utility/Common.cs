@@ -1,6 +1,6 @@
 public enum AudioGroups
 {
-    Music, Narrative, SFX
+    Music, Ambience, Narrative, SFX
 }
 
 public enum SequentialMode

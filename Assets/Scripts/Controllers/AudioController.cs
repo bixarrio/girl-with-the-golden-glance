@@ -8,13 +8,18 @@ public class AudioController : MonoBehaviour
 {
     #region Properties and Fields
 
+    private static AudioController _instance;
+    public static AudioController Instance => _instance;
+
     [SerializeField] AudioMixerGroup _musicMixerGroup;
+    [SerializeField] AudioMixerGroup _ambienceMixerGroup;
     [SerializeField] AudioMixerGroup _narrativeMixerGroup;
     [SerializeField] AudioMixerGroup _sfxMixerGroup;
 
     [SerializeField] int _sfxSourceInstances = 5;
 
     private AudioSource _musicSource;
+    private AudioSource _ambienceSource;
     private AudioSource _narrativeSource;
     private Queue<AudioSource> _sfxSources = new Queue<AudioSource>();
 
@@ -22,6 +27,16 @@ public class AudioController : MonoBehaviour
 
     #region Unity Methods
 
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        _instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start() => Init();
     private void OnEnable() => HookMessages();
     private void OnDisable() => UnhookMessages();
@@ -42,6 +57,7 @@ public class AudioController : MonoBehaviour
     private void Init()
     {
         _musicSource = CreateAudioSource("MusicAudioSource", _musicMixerGroup, 0f, true);
+        _ambienceSource = CreateAudioSource("AmbienceAudioSource", _ambienceMixerGroup, 0f, true);
         _narrativeSource = CreateAudioSource("NarrativeAudioSource", _narrativeMixerGroup, 0f, false);
         for (int i = 0; i < _sfxSourceInstances; i++)
             _sfxSources.Enqueue(CreateAudioSource($"SFXAudioSource{i:00}", _sfxMixerGroup, 1f, false));
@@ -67,6 +83,7 @@ public class AudioController : MonoBehaviour
         {
             case AudioGroups.SFX: PlaySFX(audioClip, audioLocation); break;
             case AudioGroups.Music: PlayMusic(audioClip); break;
+            case AudioGroups.Ambience: PlayAmbience(audioClip); break;
             case AudioGroups.Narrative: PlayNarrative(audioClip); break;
         }
     }
@@ -90,6 +107,13 @@ public class AudioController : MonoBehaviour
 
         _musicSource.clip = audioClip;
         _musicSource.Play();
+    }
+    private void PlayAmbience(AudioClip audioClip)
+    {
+        if (_ambienceSource.clip == audioClip) return;
+
+        _ambienceSource.clip = audioClip;
+        _ambienceSource.Play();
     }
     private void PlayNarrative(AudioClip audioClip)
     {
