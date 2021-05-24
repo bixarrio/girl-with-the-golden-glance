@@ -88,6 +88,12 @@ public class CharacterMovementController : MonoBehaviour
         _targetRotation = Quaternion.LookRotation(direction - transform.position);
     }
 
+    public void Teleport(Vector3 position, Vector3 lookDirection)
+    {
+        _agent.Warp(position);
+        SetLookDirection(lookDirection);
+    }
+
     #endregion
 
     #region Private Methods

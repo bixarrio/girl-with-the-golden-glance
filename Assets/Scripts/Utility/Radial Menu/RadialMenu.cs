@@ -53,7 +53,7 @@ public class RadialMenu : MonoBehaviour
         const float TAU = 6.28318530718f; // Circumference of a circle in radians
         const float RAD90 = TAU / 4f; // 90 degrees in radians
 
-        var theta = (TAU / count) * index + RAD90;
+        var theta = (TAU / count) * index + RAD90; // offset by 90 to put the first item on top
         var xPos = Mathf.Cos(theta);
         var yPos = Mathf.Sin(theta);
         return new Vector2(xPos, yPos) * _buttonRadius;
