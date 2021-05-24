@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class DescriptionAction : Interaction
 {
@@ -11,7 +8,6 @@ public class DescriptionAction : Interaction
     [SerializeField] string _description;
     [Header("Narrative Audio")]
     [SerializeField] AudioClip _audioClip;
-    [SerializeField] AudioGroups _group;
 
     #endregion
 
@@ -19,7 +15,7 @@ public class DescriptionAction : Interaction
     
     public override void Execute()
     {
-        if (_audioClip != null) Messaging<PlayAudio>.Trigger?.Invoke(_audioClip, _group);
+        if (_audioClip != null) Messaging<PlayAudio>.Trigger?.Invoke(_audioClip, AudioGroups.Narrative);
         Messaging<ShowNarrative>.Trigger?.Invoke(_description);
     }
 

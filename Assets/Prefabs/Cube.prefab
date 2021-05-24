@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _description: Still a box
   _audioClip: {fileID: 8300000, guid: 873d71f9b92ae3643ac6b8134aadb7d4, type: 3}
-  _group: 1
+  _group: 2
 --- !u!1 &4291011181129456596
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _description: Hmmm. It's a box
   _audioClip: {fileID: 8300000, guid: 8e31c7782b6e00842b522255ba454a38, type: 3}
-  _group: 1
+  _group: 2
 --- !u!1 &4799246905796864489
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,4 +427,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _description: I should try something else
   _audioClip: {fileID: 8300000, guid: 2abfe645ea2edda48b4c05e3c22feecb, type: 3}
-  _group: 1
+  _group: 2
