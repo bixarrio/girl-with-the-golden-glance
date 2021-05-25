@@ -95,9 +95,9 @@ public class AudioController : MonoBehaviour
         switch (group)
         {
             case AudioGroups.SFX: break; // Can't really stop sfx without knowing which one to stop
-            case AudioGroups.Music: _musicSource.Stop(); break;
-            case AudioGroups.Ambience: _ambienceSource.Stop(); break;
-            case AudioGroups.Narrative: _narrativeSource.Stop(); break;
+            case AudioGroups.Music: StopMusic(); break;
+            case AudioGroups.Ambience: StopAmbience(); break;
+            case AudioGroups.Narrative: StopNarrative(); break;
         }
     }
 
@@ -132,6 +132,22 @@ public class AudioController : MonoBehaviour
     {
         _narrativeSource.clip = audioClip;
         _narrativeSource.Play();
+    }
+
+    private void StopMusic()
+    {
+        _musicSource.clip = null;
+        _musicSource.Stop();
+    }
+    private void StopAmbience()
+    {
+        _ambienceSource.clip = null;
+        _ambienceSource.Stop();
+    }
+    private void StopNarrative()
+    {
+        _narrativeSource.clip = null;
+        _narrativeSource.Stop();
     }
 
     #endregion
