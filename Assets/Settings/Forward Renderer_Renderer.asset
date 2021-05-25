@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
   m_Name: Forward Renderer_Renderer
   m_EditorClassIdentifier: 
-  m_RendererFeatures:
-  - {fileID: 8937097655635572621}
-  m_RendererFeatureMap: 8d77228ff7f2067c
+  m_RendererFeatures: []
+  m_RendererFeatureMap: 
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -43,17 +42,3 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
---- !u!114 &8937097655635572621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24baa932c65b5224caaa6c4fb54cd861, type: 3}
-  m_Name: Make It Noir
-  m_EditorClassIdentifier: 
-  m_Active: 1
-  _material: {fileID: 2100000, guid: 90efe622bce9ad8489d2cfe07a05b959, type: 2}

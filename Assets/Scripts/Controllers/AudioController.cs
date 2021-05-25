@@ -48,10 +48,12 @@ public class AudioController : MonoBehaviour
     private void HookMessages()
     {
         Messaging<PlayAudio>.Register(PlayAudio);
+        Messaging<StopAudio>.Register(StopAudio);
     }
     private void UnhookMessages()
     {
         Messaging<PlayAudio>.Unregister(PlayAudio);
+        Messaging<StopAudio>.Unregister(StopAudio);
     }
 
     private void Init()
@@ -85,6 +87,17 @@ public class AudioController : MonoBehaviour
             case AudioGroups.Music: PlayMusic(audioClip); break;
             case AudioGroups.Ambience: PlayAmbience(audioClip); break;
             case AudioGroups.Narrative: PlayNarrative(audioClip); break;
+        }
+    }
+    private void StopAudio(AudioGroups group)
+    {
+        // This could be done better
+        switch (group)
+        {
+            case AudioGroups.SFX: break; // Can't really stop sfx without knowing which one to stop
+            case AudioGroups.Music: _musicSource.Stop(); break;
+            case AudioGroups.Ambience: _ambienceSource.Stop(); break;
+            case AudioGroups.Narrative: _narrativeSource.Stop(); break;
         }
     }
 
