@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac67bcb09dee994c970571539d3a569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _overCursor: {fileID: 0}
   _interactRadius: 1.5
   _hasFront: 1
   _interactionMenuOptions:

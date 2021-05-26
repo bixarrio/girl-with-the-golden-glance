@@ -10,10 +10,9 @@ public class Interactable : MonoBehaviour
 {
     #region Properties and Fields
 
-    [SerializeField, Min(0f), Tooltip("The radius around the interactable that is required for interaction")]
-    float _interactRadius = 1.5f;
-    [SerializeField, Tooltip("Does this interactable have a front? The target navigation point will be calculated to be in front of the interactable")]
-    bool _hasFront = false;
+    [SerializeField] Sprite _overCursor;
+    [SerializeField, Min(0f)] float _interactRadius = 1.5f;
+    [SerializeField] bool _hasFront = false;
 
     [SerializeField] InteractionMenuOption[] _interactionMenuOptions;
 
@@ -48,6 +47,22 @@ public class Interactable : MonoBehaviour
 #endif
     }
 
+    private void OnMouseOver()
+    {
+        Debug.Log("Over");
+        // Change the cursor
+        if (_overCursor == null) return;
+        Cursor.SetCursor(_overCursor.texture, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    private void OnMouseExit()
+    {
+        Debug.Log("Not Over");
+        // Change the cursor back
+        if (_overCursor == null) return;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
+
     #endregion
 
     #region Public Methods
@@ -65,6 +80,7 @@ public class Interactable : MonoBehaviour
         movementController.SetLookDirection(transform.position);
         option.Interactions.RunInteractions();
     }
+
 
     #endregion
 }
