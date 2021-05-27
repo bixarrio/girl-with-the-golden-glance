@@ -35,9 +35,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="377.31356"
-     inkscape:cy="729.50889"
+     inkscape:zoom="0.35"
+     inkscape:cx="81.027546"
+     inkscape:cy="627.93961"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -151,7 +151,8 @@
     <g
        id="g940"
        inkscape:export-xdpi="9.4315786"
-       inkscape:export-ydpi="9.4315786">
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(117.92857,-180.67262)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle906"
@@ -165,8 +166,123 @@
          style="fill:#0a0a0a;fill-opacity:1;stroke:none;stroke-width:15.0009;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:transform-center-x="1.212183e-06"
          inkscape:transform-center-y="-3.4493587"
-         d="M 449.39844 567.3125 C 411.95859 614.20415 415.20302 627.7692 403.76367 640.93945 C 396.05374 649.8159 376.77119 651.93861 356.84961 665.87891 C 321.98454 690.27598 342.99568 761.94128 365.68555 734.64844 C 342.94945 686.55229 438.38495 671.06318 423.88672 732.67383 C 455.35242 741.99414 451.05967 696.03006 447.15625 680.67188 C 448.77427 649.49992 484.49181 624.88215 492.95508 610.13281 C 493.33711 593.36316 464.12537 572.97351 449.39844 567.3125 z M 395.98047 721.62891 L 350.81836 799.85156 L 441.14062 799.85156 L 395.98047 721.62891 z "
+         d="m 449.39844,567.3125 c -37.43985,46.89165 -34.19542,60.4567 -45.63477,73.62695 -7.70993,8.87645 -26.99248,10.99916 -46.91406,24.93946 -34.86507,24.39707 -13.85393,96.06237 8.83594,68.76953 -22.7361,-48.09615 72.6994,-63.58526 58.20117,-1.97461 31.4657,9.32031 27.17295,-36.64377 23.26953,-52.00195 1.61802,-31.17196 37.33556,-55.78973 45.79883,-70.53907 0.38203,-16.76965 -28.82971,-37.1593 -43.55664,-42.82031 z m -53.41797,154.31641 -45.16211,78.22265 h 90.32226 z"
          transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g880"
+       transform="translate(-5.2916667,-210.15476)">
+      <circle
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle855"
+         cx="-48.593033"
+         cy="308.9837"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g861"
+         transform="translate(-156.16901,177.61082)">
+        <rect
+           style="fill:#ffffff;fill-opacity:0;stroke:#0a0a0a;stroke-width:3.969;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect857"
+           width="30.735994"
+           height="49.731884"
+           x="93.277061"
+           y="103.51491" />
+        <rect
+           style="fill:#0a0a0a;fill-opacity:1;stroke:#0a0a0a;stroke-width:3.77809;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect859"
+           width="27.85379"
+           height="49.731888"
+           x="109.63725"
+           y="163.60309"
+           transform="matrix(0.90197174,-0.43179507,0,1,0,0)" />
+      </g>
+    </g>
+    <g
+       id="g892"
+       transform="translate(244.17262,-86.178571)"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_n_30.png"
+       inkscape:export-xdpi="9.4315777"
+       inkscape:export-ydpi="9.4315777">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle888"
+         cx="64.255951"
+         cy="173.1131"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path869"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="-2.3391981"
+         inkscape:transform-center-y="-3.2342041"
+         d="m 45.6169,141.57555 1.12442,54.36767 10.07917,-5.81921 12.33187,21.35943 25.238828,-14.57164 -12.331868,-21.35944 10.079158,-5.81921 z" />
+    </g>
+    <g
+       id="g899"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_s_30.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(260.04762,45.357143)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle894"
+         cx="61.232143"
+         cy="128.5119"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path874"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="2.3392019"
+         inkscape:transform-center-y="3.2342059"
+         d="m 78.366396,161.92057 -1.12442,-54.36767 -10.07917,5.81921 -12.33187,-21.359426 -25.23883,14.571636 12.33187,21.35944 -10.07916,5.81921 z" />
+    </g>
+    <g
+       id="g905"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_e_60.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(244.17262,164.79762)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle901"
+         cx="73.327377"
+         cy="151.19048"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path884"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="-3.2341981"
+         inkscape:transform-center-y="2.3391959"
+         d="m 106.60183,133.73685 -54.367659,1.12442 5.81921,10.07917 -21.359435,12.33187 14.571645,25.23883 21.35944,-12.33186 5.8192,10.07916 z" />
+    </g>
+    <g
+       id="g911"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_w_60.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(262.31548,-6.0476191)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle907"
+         cx="49.136906"
+         cy="260.80359"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path886"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="3.2342019"
+         inkscape:transform-center-y="-2.3391941"
+         d="m 16.618402,281.09585 54.36766,-1.12442 -5.81921,-10.07917 21.359438,-12.33187 -14.571648,-25.23883 -21.35944,12.33186 -5.8192,-10.07916 z" />
     </g>
   </g>
 </svg>

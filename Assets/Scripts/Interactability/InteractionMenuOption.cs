@@ -7,7 +7,7 @@ public class InteractionMenuOption : MonoBehaviour
     #region Properties and Fields
 
     public Sprite MenuIcon;
-    public Interaction[] Interactions;
+    public Interaction Interaction;
 
     #endregion
 }

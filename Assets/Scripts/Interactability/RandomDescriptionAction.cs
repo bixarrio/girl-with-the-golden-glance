@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class RandomDescriptionAction : MultiDescriptionAction
+public class RandomDescriptionAction : InteractionGroup
 {
     public override void Execute() 
-        => _descriptions[Random.Range(0, _descriptions.Length)].Execute();
+        => _interactions[Random.Range(0, _interactions.Length)].Execute();
 }

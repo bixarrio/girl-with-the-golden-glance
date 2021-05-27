@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SequentialDescriptionAction : MultiDescriptionAction
+public class SequentialDescriptionAction : InteractionGroup
 {
     #region Properties and Fields
 
@@ -16,7 +16,7 @@ public class SequentialDescriptionAction : MultiDescriptionAction
 
     public override void Execute()
     {
-        _descriptions[_currentDescription].Execute();
+        _interactions[_currentDescription].Execute();
         HandleIncrementForSelectedMode();
     }
 
@@ -28,13 +28,13 @@ public class SequentialDescriptionAction : MultiDescriptionAction
     {
         if (_mode == SequentialMode.Wrap)
         {
-            // Wrap the current description back to 0 if we've reached the end of the descriptions
-            _currentDescription = (_currentDescription + 1) % _descriptions.Length;
+            // Wrap the current interaction back to 0 if we've reached the end of the interactions
+            _currentDescription = (_currentDescription + 1) % _interactions.Length;
         }
         else if (_mode == SequentialMode.Clamp)
         {
-            // Only increment if we haven't reached the end of the descriptions yet
-            _currentDescription = Mathf.Clamp(_currentDescription + 1, 0, _descriptions.Length - 1);
+            // Only increment if we haven't reached the end of the interactions yet
+            _currentDescription = Mathf.Clamp(_currentDescription + 1, 0, _interactions.Length - 1);
         }
     }
 

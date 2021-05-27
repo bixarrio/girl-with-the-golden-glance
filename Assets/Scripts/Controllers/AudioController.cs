@@ -80,7 +80,6 @@ public class AudioController : MonoBehaviour
 
     private void PlayAudio(AudioClip audioClip, AudioGroups group, Transform audioLocation = null)
     {
-        // This could be done better
         switch (group)
         {
             case AudioGroups.SFX: PlaySFX(audioClip, audioLocation); break;

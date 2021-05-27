@@ -9,7 +9,7 @@ public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     [SerializeField] Image _icon;
 
     private RadialMenu _myMenu;
-    private Interactable _interactable;
+    private OptionsInteractable _interactable;
     private InteractionMenuOption _option;
 
     #endregion
@@ -17,7 +17,7 @@ public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     #region Public Methods
 
     public void SetIcon(Sprite icon) => _icon.sprite = icon;
-    public void SetMyData(RadialMenu menu, Interactable interactable, InteractionMenuOption option)
+    public void SetMyData(RadialMenu menu, OptionsInteractable interactable, InteractionMenuOption option)
     {
         _myMenu = menu;
         _interactable = interactable;
@@ -26,7 +26,7 @@ public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        CharacterMovementController.Instance.SetInteractionTarget(_interactable, _option);
+        CharacterMovementController.Instance.SetInteractionTarget(_interactable, _option.Interaction);
         Messaging<CloseMenu>.Trigger?.Invoke();
     }
     public void OnPointerEnter(PointerEventData eventData)

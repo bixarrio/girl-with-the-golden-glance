@@ -10,23 +10,36 @@ public class Interactable : MonoBehaviour
 {
     #region Properties and Fields
 
-    [SerializeField] Sprite _overCursor;
-    [SerializeField, Min(0f)] float _interactRadius = 1.5f;
-    [SerializeField] bool _hasFront = false;
+    [SerializeField] protected Texture2D _overCursor;
+    [SerializeField, Min(0f)] protected float _interactRadius = 1.5f;
+    [SerializeField] protected bool _hasFront = false;
 
-    [SerializeField] InteractionMenuOption[] _interactionMenuOptions;
-
-    public InteractionMenuOption[] MenuOptions => _interactionMenuOptions;
+    [SerializeField] Interaction _interaction;
 
     #endregion
 
     #region Unity Methods
 
-    private void OnMouseDown()
+    protected virtual void OnMouseDown()
     {
         if (!Input.GetMouseButtonDown(0)) return;
         if (EventSystem.current.IsPointerOverGameObject()) return;
-        Messaging<InteractableClicked>.Trigger?.Invoke(this, Input.mousePosition);
+        Messaging<InteractableClicked>.Trigger?.Invoke(this, Input.mousePosition); // not sure we need this
+        CharacterMovementController.Instance.SetInteractionTarget(this, _interaction);
+    }
+
+    protected virtual void OnMouseOver()
+    {
+        // Change the cursor
+        if (_overCursor == null) return;
+        Cursor.SetCursor(_overCursor, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    protected virtual void OnMouseExit()
+    {
+        // Change the cursor back
+        if (_overCursor == null) return;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     private void OnDrawGizmosSelected()
@@ -47,27 +60,11 @@ public class Interactable : MonoBehaviour
 #endif
     }
 
-    private void OnMouseOver()
-    {
-        Debug.Log("Over");
-        // Change the cursor
-        if (_overCursor == null) return;
-        Cursor.SetCursor(_overCursor.texture, Vector2.zero, CursorMode.ForceSoftware);
-    }
-
-    private void OnMouseExit()
-    {
-        Debug.Log("Not Over");
-        // Change the cursor back
-        if (_overCursor == null) return;
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    }
-
     #endregion
 
     #region Public Methods
 
-    public Vector3 InteractTarget(Transform source)
+    public virtual Vector3 InteractTarget(Transform source)
     {
         // if this interactable has a front, calculate a point on the interact radius *in front* of the interactable
         if (_hasFront) return transform.position + transform.forward * _interactRadius;
@@ -75,10 +72,10 @@ public class Interactable : MonoBehaviour
         return transform.position + (source.position - transform.position).normalized * _interactRadius;
     }
 
-    public void StartInteraction(CharacterMovementController movementController, InteractionMenuOption option)
+    public virtual void StartInteraction(CharacterMovementController movementController, Interaction interaction)
     {
         movementController.SetLookDirection(transform.position);
-        option.Interactions.RunInteractions();
+        interaction.Execute();
     }
 
 

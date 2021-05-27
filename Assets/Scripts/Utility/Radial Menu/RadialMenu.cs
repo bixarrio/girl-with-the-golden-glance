@@ -21,7 +21,7 @@ public class RadialMenu : MonoBehaviour
 
     #region Public Methods
 
-    public void SpawnButtons(Interactable interactable)
+    public void SpawnButtons(OptionsInteractable interactable)
     {
         for (int i = 0; i < interactable.MenuOptions.Length; i++)
         {

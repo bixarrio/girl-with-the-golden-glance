@@ -21,14 +21,14 @@ public class RadialMenuSpawner : MonoBehaviour
 
     private void HookMessages()
     {
-        Messaging<InteractableClicked>.Register(InteractableClicked);
+        Messaging<OptionsInteractableClicked>.Register(InteractableClicked);
     }
     private void UnhookMessages()
     {
-        Messaging<InteractableClicked>.Unregister(InteractableClicked);
+        Messaging<OptionsInteractableClicked>.Unregister(InteractableClicked);
     }
 
-    private void InteractableClicked(Interactable interactable, Vector3 mousePosition)
+    private void InteractableClicked(OptionsInteractable interactable, Vector3 mousePosition)
     {
         Messaging<CloseMenu>.Trigger?.Invoke();
 

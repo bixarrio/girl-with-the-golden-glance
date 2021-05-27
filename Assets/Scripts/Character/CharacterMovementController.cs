@@ -13,8 +13,8 @@ public class CharacterMovementController : MonoBehaviour
     private static CharacterMovementController _instance;
     public static CharacterMovementController Instance => _instance;
 
-    [SerializeField, Tooltip("The speed at which the character must turn towards an interactable when interacting")] float _interactLookRotationSpeed = 15f;
-    [SerializeField, Tooltip("How close to the required rotation can we get before we're happy")] float _interactLookRotationTolerance = 0.1f;
+    [SerializeField] float _interactLookRotationSpeed = 15f;
+    [SerializeField] float _interactLookRotationTolerance = 0.1f;
 
     private NavMeshAgent _agent;
 
@@ -22,7 +22,7 @@ public class CharacterMovementController : MonoBehaviour
     private Quaternion _targetRotation;
 
     private Interactable _currentInteractable;
-    private InteractionMenuOption _currentInteractionMenuOption;
+    private Interaction _currentInteraction;
 
     #endregion
 
@@ -75,10 +75,10 @@ public class CharacterMovementController : MonoBehaviour
         _agent.SetDestination(position);
     }
 
-    public void SetInteractionTarget(Interactable interactable, InteractionMenuOption menuOption)
+    public void SetInteractionTarget(Interactable interactable, Interaction interaction)
     {
         _currentInteractable = interactable;
-        _currentInteractionMenuOption = menuOption;
+        _currentInteraction = interaction;
         SetDestination(interactable.InteractTarget(transform));
     }
 
@@ -108,7 +108,7 @@ public class CharacterMovementController : MonoBehaviour
                 // Tell the system to close the menu if it is open
                 Messaging<CloseMenu>.Trigger?.Invoke();
                 _currentInteractable = null;
-                _currentInteractionMenuOption = null;
+                _currentInteraction = null;
                 SetDestination(hit.point);
             }
         }
@@ -116,9 +116,9 @@ public class CharacterMovementController : MonoBehaviour
 
     private void StartInteraction()
     {
-        _currentInteractable.StartInteraction(this, _currentInteractionMenuOption);
+        _currentInteractable.StartInteraction(this, _currentInteraction);
         _currentInteractable = null;
-        _currentInteractionMenuOption = null;
+        _currentInteraction = null;
     }
 
     private bool AgentHasArrived()
