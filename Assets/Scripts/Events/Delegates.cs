@@ -6,3 +6,5 @@ public delegate void StopAudio(AudioGroups audioGroup);
 public delegate void InteractableClicked(Interactable interactable, Vector3 mousePosition);
 public delegate void OptionsInteractableClicked(OptionsInteractable interactable, Vector3 mousePosition);
 public delegate void CloseMenu();
+public delegate void SetCursor(Sprite cursor);
+public delegate void GameEvent(string eventName);

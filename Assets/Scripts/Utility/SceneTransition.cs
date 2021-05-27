@@ -56,9 +56,9 @@ public class SceneTransition : MonoBehaviour
         yield return TransitionFrom(0f, 1f);
         _transitionImage.fillClockwise = !_transitionImage.fillClockwise;
 
-        SceneManager.LoadScene(targetScene);
-        yield return new WaitForSeconds(0.1f); // give the scene a moment to 'settle' before moving the character
         callback?.Invoke();
+        yield return new WaitForSeconds(0.1f); // give the character a moment to 'settle' before changing the scene
+        SceneManager.LoadScene(targetScene);
 
         yield return TransitionFrom(1f, 0f);
         _transitionImage.fillClockwise = !_transitionImage.fillClockwise;

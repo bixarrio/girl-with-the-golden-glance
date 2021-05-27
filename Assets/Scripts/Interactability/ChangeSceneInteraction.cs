@@ -6,8 +6,7 @@ public class ChangeSceneInteraction : Interaction
     #region Properties and Fields
 
     [SerializeField] string _targetScene;
-    [SerializeField] Vector3 _characterSpawnPosition;
-    [SerializeField] Vector3 _characterLookDirection;
+    [SerializeField] Transform _characterSpawnPosition;
 
     #endregion
 
@@ -19,11 +18,11 @@ public class ChangeSceneInteraction : Interaction
         myPos.y = 0;
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(myPos, _characterSpawnPosition);
+        Gizmos.DrawLine(myPos, _characterSpawnPosition.position);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawSphere(_characterSpawnPosition, 0.125f);
-        Gizmos.DrawRay(_characterSpawnPosition, (_characterLookDirection - _characterSpawnPosition).normalized);
+        Gizmos.DrawSphere(_characterSpawnPosition.position, 0.125f);
+        Gizmos.DrawRay(_characterSpawnPosition.position, _characterSpawnPosition.forward);
     }
 
     #endregion
@@ -33,7 +32,7 @@ public class ChangeSceneInteraction : Interaction
     public override void Execute()
     {
         SceneTransition.Instance.DoTransition(_targetScene,
-            () => CharacterMovementController.Instance.Teleport(_characterSpawnPosition, _characterLookDirection));
+            () => CharacterMovementController.Instance.Teleport(_characterSpawnPosition.position, _characterSpawnPosition.forward));
     }
 
     #endregion

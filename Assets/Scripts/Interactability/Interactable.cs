@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
 {
     #region Properties and Fields
 
-    [SerializeField] protected Texture2D _overCursor;
+    [SerializeField] protected Sprite _overCursor;
     [SerializeField, Min(0f)] protected float _interactRadius = 1.5f;
     [SerializeField] protected bool _hasFront = false;
 
@@ -32,14 +32,14 @@ public class Interactable : MonoBehaviour
     {
         // Change the cursor
         if (_overCursor == null) return;
-        Cursor.SetCursor(_overCursor, Vector2.zero, CursorMode.ForceSoftware);
+        Messaging<SetCursor>.Trigger?.Invoke(_overCursor);
     }
 
     protected virtual void OnMouseExit()
     {
         // Change the cursor back
         if (_overCursor == null) return;
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        Messaging<SetCursor>.Trigger?.Invoke(null);
     }
 
     private void OnDrawGizmosSelected()

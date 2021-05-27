@@ -201,25 +201,21 @@
       </g>
     </g>
     <g
-       id="g892"
-       transform="translate(244.17262,-86.178571)"
-       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_n_30.png"
-       inkscape:export-xdpi="9.4315777"
-       inkscape:export-ydpi="9.4315777">
+       id="g948">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle888"
-         cx="64.255951"
-         cy="173.1131"
+         cx="308.42856"
+         cy="86.934525"
          r="43.089287"
          inkscape:export-xdpi="9.4315786"
          inkscape:export-ydpi="9.4315786" />
       <path
          id="path869"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:transform-center-x="-2.3391981"
          inkscape:transform-center-y="-3.2342041"
-         d="m 45.6169,141.57555 1.12442,54.36767 10.07917,-5.81921 12.33187,21.35943 25.238828,-14.57164 -12.331868,-21.35944 10.079158,-5.81921 z" />
+         d="m 289.78952,55.396979 1.12442,54.367671 10.07917,-5.81921 12.33187,21.35943 25.23883,-14.57164 -12.33187,-21.359441 10.07916,-5.81921 z" />
     </g>
     <g
        id="g899"
@@ -283,6 +279,53 @@
          inkscape:transform-center-x="3.2342019"
          inkscape:transform-center-y="-2.3391941"
          d="m 16.618402,281.09585 54.36766,-1.12442 -5.81921,-10.07917 21.359438,-12.33187 -14.571648,-25.23883 -21.35944,12.33186 -5.8192,-10.07916 z" />
+    </g>
+    <g
+       id="g957"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\options.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(113.39286,-61.988095)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle913"
+         cx="113.46587"
+         cy="182.14656"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:91.3739px;line-height:125%;font-family:Lemon;-inkscape-font-specification:'Lemon, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.89635;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="85.779572"
+         y="216.41177"
+         id="text942"><tspan
+           sodipodi:role="line"
+           id="tspan940"
+           x="85.779572"
+           y="216.41177"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:91.3739px;font-family:Lemon;-inkscape-font-specification:'Lemon, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.89635;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">?</tspan></text>
+    </g>
+    <g
+       id="g965"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\cursor_default.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(263.82738,-232.07738)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle961"
+         cx="40.257641"
+         cy="220.17432"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <circle
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.07996;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path959"
+         cx="40.257641"
+         cy="220.17432"
+         r="13.960018" />
     </g>
   </g>
 </svg>
