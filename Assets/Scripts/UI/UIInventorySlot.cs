@@ -14,7 +14,9 @@ public class UIInventorySlot : MonoBehaviour
     public bool TryRemoveItem()
     {
         if (CurrentInventoryItem == null) return false;
-        Destroy(CurrentInventoryItem);
+        CurrentInventoryItem.CurrentSlot = null;
+        CurrentInventoryItem.transform.SetParent(null);
+        Destroy(CurrentInventoryItem.gameObject);
         return true;
     }
 

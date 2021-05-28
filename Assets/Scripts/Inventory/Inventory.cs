@@ -45,8 +45,6 @@ public class Inventory
         return slot.UIInventorySlot.TryRemoveItem();
     }
 
-    public bool TryDropItemFromInventory(Item item) => false;
-
     public void ShuffleInventory() => ShuffleItems();
 
     #endregion

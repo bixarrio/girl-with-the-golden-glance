@@ -37,9 +37,9 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void SetItem(Item item)
     {
         _item = item;
-        _image.sprite = _item.InventoryIcon;
+        _image.sprite = _item?.InventoryIcon;
     }
-
+    public Item GetItem() => _item;
     public bool HasItem(Item item) => _item == item;
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -78,8 +78,21 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private void HandleDragEnd(List<RaycastResult> result)
     {
+        var dropped = false;
         foreach (var hit in result)
         {
+            // Check if we're dropping the item
+            var group = hit.gameObject.GetComponent<UIInventoryGroup>();
+            if (group != null)
+            {
+                if (_item.DropCondition?.CanDrop() ?? true) // no condition == true
+                {
+                    dropped = CharacterInventoryController.Instance.TryRemoveItem(_item);
+                    continue;
+                }
+            }
+
+            // Now, check if we're moving stuff around
             var slot = hit.gameObject.GetComponent<UIInventorySlot>();
             if (slot == null) continue; // the hit was not on a slot
             if (slot.Filled) continue; // We could be combining items here
@@ -91,8 +104,11 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             break; // nothing more to do
         }
 
-        transform.SetParent(CurrentSlot.transform); // reset this item's parent
-        transform.localPosition = Vector3.zero; // and position in the parent
+        if (!dropped)
+        {
+            transform.SetParent(CurrentSlot.transform); // reset this item's parent
+            transform.localPosition = Vector3.zero; // and position in the parent
+        }
     }
 
     #endregion

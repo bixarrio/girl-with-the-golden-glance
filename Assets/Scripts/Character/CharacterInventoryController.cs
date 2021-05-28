@@ -94,10 +94,39 @@ public class CharacterInventoryController : MonoBehaviour
     public bool HasItemEquipped(Item item)
         => _handEquipped.ContainsItem(item);
 
+    public bool HasItem(Item item)
+    {
+        foreach (var uiitem in AggregateItems())
+        {
+            if (uiitem.HasItem(item)) return true;
+        }
+        return false;
+    }
+
     public bool TryRemoveEquippedItem(Item item)
     {
+        // If we don't have it, we can't remove it
         if (!HasItemEquipped(item)) return false;
         return _handEquipped.TryRemoveItem(item);
+    }
+
+    public bool TryRemoveItem(Item item)
+    {
+        // If we don't have it, we can't drop it
+        if (!HasItem(item)) return false;
+        var slot = GetItemSlot(item);
+        if (slot == null) return false;
+
+        // Create a world version
+        var world = GameObject.Find("World");
+        var holding = slot.CurrentInventoryItem.GetItem();
+        var dropPos = transform.TransformVector(new Vector3(transform.position.x, 1f, transform.position.z + 0.3f));
+        Debug.Log($"Dropping at {dropPos}");
+        Instantiate(holding.ItemPrefab, dropPos, Random.rotation, world.transform);
+
+        // remove from inventory
+        slot.TryRemoveItem();
+        return true;
     }
 
     #endregion
@@ -126,29 +155,35 @@ public class CharacterInventoryController : MonoBehaviour
         _handEquipped.SetItemPrefab(_itemPrefab);
     }
 
+    private UIInventorySlot GetItemSlot(Item item)
+    {
+        foreach (var slot in AggregateSlots())
+            if (slot.CurrentInventoryItem?.HasItem(item) ?? false)
+                return slot;
+        return null;
+    }
+
+    private IEnumerable<UIInventorySlot> AggregateSlots()
+    {
+        foreach (var slot in _rightPocketInventory.UISlots)
+            yield return slot;
+
+        foreach (var slot in _leftPocketInventory.UISlots)
+            yield return slot;
+
+        foreach (var slot in _topRightPocket.UISlots)
+            yield return slot;
+
+        foreach (var slot in _topLeftPocket.UISlots)
+            yield return slot;
+
+        foreach (var slot in _handEquipped.UISlots)
+            yield return slot;
+    }
+
     private IEnumerable<UIInventoryItem> AggregateItems()
     {
-        foreach(var slot in _rightPocketInventory.UISlots)
-        {
-            if (slot.CurrentInventoryItem == null) continue;
-            yield return slot.CurrentInventoryItem;
-        }
-        foreach (var slot in _leftPocketInventory.UISlots)
-        {
-            if (slot.CurrentInventoryItem == null) continue;
-            yield return slot.CurrentInventoryItem;
-        }
-        foreach (var slot in _topRightPocket.UISlots)
-        {
-            if (slot.CurrentInventoryItem == null) continue;
-            yield return slot.CurrentInventoryItem;
-        }
-        foreach (var slot in _topLeftPocket.UISlots)
-        {
-            if (slot.CurrentInventoryItem == null) continue;
-            yield return slot.CurrentInventoryItem;
-        }
-        foreach (var slot in _handEquipped.UISlots)
+        foreach (var slot in AggregateSlots())
         {
             if (slot.CurrentInventoryItem == null) continue;
             yield return slot.CurrentInventoryItem;
