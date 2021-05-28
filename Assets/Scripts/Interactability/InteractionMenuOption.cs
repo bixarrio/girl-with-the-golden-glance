@@ -8,6 +8,7 @@ public class InteractionMenuOption : MonoBehaviour
 
     public Sprite MenuIcon;
     public Interaction Interaction;
+    public InteractionCondition Condition;
 
     #endregion
 }

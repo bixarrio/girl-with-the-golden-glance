@@ -8,7 +8,7 @@ public class GameEventController : MonoBehaviour
     private static GameEventController _instance;
     public static GameEventController Instance => _instance;
 
-    private Dictionary<string, bool> _gameEvents;
+    private Dictionary<string, bool> _gameEvents = new Dictionary<string, bool>();
 
     #endregion
 

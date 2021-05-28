@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RadialMenu : MonoBehaviour
@@ -23,15 +24,16 @@ public class RadialMenu : MonoBehaviour
 
     public void SpawnButtons(OptionsInteractable interactable)
     {
-        for (int i = 0; i < interactable.MenuOptions.Length; i++)
+        var valid = interactable.MenuOptions.Where(mo => mo.Condition?.ConditionMet() ?? true).ToList();
+        for (int i = 0; i < valid.Count; i++)
         {
             var button = Instantiate(_buttonPrefab) as RadialButton;
             button.transform.SetParent(transform);
 
-            button.SetIcon(interactable.MenuOptions[i].MenuIcon);
-            button.SetMyData(this, interactable, interactable.MenuOptions[i]);
+            button.SetIcon(valid[i].MenuIcon);
+            button.SetMyData(this, interactable, valid[i]);
 
-            StartCoroutine(FlyoutButton(button, GetButtonPosition(i, interactable.MenuOptions.Length)));
+            StartCoroutine(FlyoutButton(button, GetButtonPosition(i, valid.Count)));
         }
     }
 

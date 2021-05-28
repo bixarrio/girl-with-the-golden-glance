@@ -32,6 +32,7 @@ public class Interactable : MonoBehaviour
     {
         // Change the cursor
         if (_overCursor == null) return;
+        if (EventSystem.current.IsPointerOverGameObject()) return;
         Messaging<SetCursor>.Trigger?.Invoke(_overCursor);
     }
 
