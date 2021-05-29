@@ -18,6 +18,39 @@
      id="defs2">
     <inkscape:path-effect
        effect="simplify"
+       id="path-effect931"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect920"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect900"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
        id="path-effect912"
        is_visible="true"
        lpeversion="1"
@@ -35,9 +68,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="81.027546"
-     inkscape:cy="627.93961"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="279.88058"
+     inkscape:cy="321.03717"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -91,7 +124,8 @@
     <g
        id="g889"
        inkscape:export-xdpi="9.4315786"
-       inkscape:export-ydpi="9.4315786">
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-114.90476,170.84524)">
       <circle
          style="fill:#ffffff;fill-opacity:0;stroke-width:1.32292;stroke-linejoin:round"
          id="circle838"
@@ -119,7 +153,7 @@
        id="g904"
        inkscape:export-xdpi="9.4315796"
        inkscape:export-ydpi="9.4315796"
-       transform="translate(26.458333,-139.09524)">
+       transform="translate(-187.47619,90.714289)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle864"
@@ -152,7 +186,7 @@
        id="g940"
        inkscape:export-xdpi="9.4315786"
        inkscape:export-ydpi="9.4315786"
-       transform="translate(117.92857,-180.67262)">
+       transform="translate(-190.5,123.97619)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle906"
@@ -171,7 +205,7 @@
     </g>
     <g
        id="g880"
-       transform="translate(-5.2916667,-210.15476)">
+       transform="translate(360.58929,-334.13095)">
       <circle
          style="fill:#ffffff;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle855"
@@ -285,7 +319,7 @@
        inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\options.png"
        inkscape:export-xdpi="9.4315786"
        inkscape:export-ydpi="9.4315786"
-       transform="translate(113.39286,-61.988095)">
+       transform="translate(136.82738,63.5)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          id="circle913"
@@ -311,7 +345,7 @@
        inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\cursor_default.png"
        inkscape:export-xdpi="9.4315786"
        inkscape:export-ydpi="9.4315786"
-       transform="translate(263.82738,-232.07738)">
+       transform="translate(212.42262,-49.136904)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          id="circle961"
@@ -326,6 +360,63 @@
          cx="40.257641"
          cy="220.17432"
          r="13.960018" />
+    </g>
+    <g
+       id="g894"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\close.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(210.15476,73.327381)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle879"
+         cx="31.749964"
+         cy="252.48795"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="rect881"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64543;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 6.6265529,241.26281 11.2253201,11.22532 -11.2253201,11.22532 13.8979101,13.89791 11.22532,-11.22532 11.22531,11.22531 13.89828,-13.89828 -11.22532,-11.22531 11.22532,-11.22532 -13.89791,-13.89791 -11.22532,11.22532 -11.22532,-11.22532 z" />
+    </g>
+    <g
+       id="g914"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\give.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-60.430099,-144.92954)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle896"
+         cx="-17.386906"
+         cy="244.92857"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path898"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.327552px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -13.455929,224.94234 -10.687719,18.51101 h 21.3749222 z m 23.266797,16.99173 c -2.567895,0.0665 -6.9312233,2.75737 -12.8100705,4.34082 -7.0129375,1.88893 -15.6844835,-0.37522 -22.6740685,-0.10852 -3.07618,0.32194 -4.686712,1.21609 -7.482747,2.67942 -5.267777,3.16802 -12.858953,11.91555 -10.816394,13.96917 2.072495,3.27612 6.218169,4.14655 9.656776,5.25653 2.977533,1.30654 5.526714,-1.5422 6.358784,-4.14549 1.149368,-2.91419 2.333717,-6.62899 5.727816,-7.54475 6.408835,-0.39432 14.7886904,-1.76496 21.1470289,-3.47886 3.681704,-1.03451 12.3568891,-5.37325 12.3806391,-10.54923 -0.397897,-0.31005 -0.895173,-0.43444 -1.487764,-0.41909 z" />
+    </g>
+    <g
+       id="g953"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\use.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-135.77292,179.60512)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle916"
+         cx="105.2793"
+         cy="156.95341"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786"
+         r="43.089287" />
+      <path
+         id="path940"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.46512;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 98.324782,133.80372 a 16.303693,16.303693 0 0 0 -3.260911,0.3293 l 8.885169,8.88517 c 2.06213,2.06212 2.06213,5.38222 0,7.44433 l -5.051849,5.05186 c -2.062117,2.06212 -5.382211,2.06212 -7.444332,0 l -9.025453,-9.02546 a 16.303693,16.303693 0 0 0 -0.406574,3.61815 16.303693,16.303693 0 0 0 16.30395,16.30395 16.303693,16.303693 0 0 0 3.643108,-0.41252 c 0.0948,0.11186 0.19161,0.22252 0.2972,0.32811 l 12.2299,12.22989 c 2.06212,2.06213 5.38281,2.06213 7.44493,0 l 5.05125,-5.05125 c 2.06213,-2.06212 2.06213,-5.38222 0,-7.44434 l -12.22989,-12.23048 c -0.1506,-0.15061 -0.30951,-0.28689 -0.47255,-0.41549 a 16.303693,16.303693 0 0 0 0.3394,-3.30787 16.303693,16.303693 0 0 0 -16.303348,-16.30335 z" />
     </g>
   </g>
 </svg>

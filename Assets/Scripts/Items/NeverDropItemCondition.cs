@@ -1,11 +1,11 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "GWTGG/Never Drop Item Condition")]
-public class NeverDropItemCondition : ScriptableObject
+public class NeverDropItemCondition : ItemDropCondition
 {
     #region Public Methods
 
-    public virtual bool CanDrop() => false;
+    public override bool CanDrop() => false;
 
     #endregion
 }

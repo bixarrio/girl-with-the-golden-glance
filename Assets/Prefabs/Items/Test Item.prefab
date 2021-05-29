@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b08d9657b28054aad800c0c7167dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _description: It's a thing. For testing
+  _description: I don't know what this is, but it's yellow. Like a fire hydrant
 --- !u!1 &4480182711966905481
 GameObject:
   m_ObjectHideFlags: 0

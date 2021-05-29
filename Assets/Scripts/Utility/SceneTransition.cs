@@ -39,7 +39,7 @@ public class SceneTransition : MonoBehaviour
 
     #region Public Methods
 
-    public void DoTransition(string targetScene, Action callback)
+    public void DoTransition(string targetScene, System.Action callback)
     {
         if (_transitionRoutine != null) StopCoroutine(_transitionRoutine);
         _transitionRoutine = StartCoroutine(DoTransitionRoutine(targetScene, callback));
@@ -49,7 +49,7 @@ public class SceneTransition : MonoBehaviour
 
     #region Private Methods
 
-    private IEnumerator DoTransitionRoutine(string targetScene, Action callback)
+    private IEnumerator DoTransitionRoutine(string targetScene, System.Action callback)
     {
         _transitionImage.enabled = true;
 

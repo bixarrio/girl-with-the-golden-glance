@@ -5,12 +5,19 @@ using UnityEngine.EventSystems;
 public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     #region Properties and Fields
-    
+
     [SerializeField] Image _icon;
+    [SerializeField] Text _descriptionText;
 
     private RadialMenu _myMenu;
     private OptionsInteractable _interactable;
     private InteractionMenuOption _option;
+
+    #endregion
+
+    #region Unity Methods
+
+    private void Start() => _descriptionText.text = string.Empty;
 
     #endregion
 
@@ -30,9 +37,16 @@ public class RadialButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         Messaging<CloseMenu>.Trigger?.Invoke();
     }
     public void OnPointerEnter(PointerEventData eventData)
-        => transform.localScale = new Vector3(1.1f, 1.1f, 0f);
+    {
+        transform.localScale = new Vector3(1.1f, 1.1f, 0f);
+        _descriptionText.text = _option.Description;
+    }
+
     public void OnPointerExit(PointerEventData eventData)
-        => transform.localScale = new Vector3(1f, 1f, 0f);
+    {
+        transform.localScale = new Vector3(1f, 1f, 0f);
+        _descriptionText.text = string.Empty;
+    }
 
     #endregion
 }

@@ -43,6 +43,7 @@ public class CharacterMovementController : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         Debug.Assert(_agent != null);
+        _agent.SetDestination(Vector3.zero);
     }
 
     private void Update()

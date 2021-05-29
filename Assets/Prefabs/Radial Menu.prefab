@@ -48,5 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8f7d352d6602941bfe69655609241b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonRadius: 24
+  _buttonRadius: 30
+  _flyoutSpeed: 0.1
   _buttonPrefab: {fileID: 7545046591689856746, guid: 70aca447ed01f91488d0b1363932f003, type: 3}
