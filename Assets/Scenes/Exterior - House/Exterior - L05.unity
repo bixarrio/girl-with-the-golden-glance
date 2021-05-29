@@ -21139,6 +21139,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4038865644625833053, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
+      propertyPath: _targetScene
+      value: Exterior - L06
+      objectReference: {fileID: 0}
     - target: {fileID: 8619973224805100564, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
       propertyPath: m_Name
       value: Locked Door
