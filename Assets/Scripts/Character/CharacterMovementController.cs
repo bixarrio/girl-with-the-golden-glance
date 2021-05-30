@@ -16,6 +16,7 @@ public class CharacterMovementController : MonoBehaviour
     [SerializeField] float _interactLookRotationSpeed = 15f;
     [SerializeField] float _interactLookRotationTolerance = 0.1f;
 
+    private Animator _animator;
     private NavMeshAgent _agent;
 
     private bool _isTurning = false;
@@ -44,6 +45,9 @@ public class CharacterMovementController : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         Debug.Assert(_agent != null);
         _agent.SetDestination(Vector3.zero);
+
+        _animator = GetComponentInChildren<Animator>();
+        Debug.Assert(_animator != null);
     }
 
     private void Update()
@@ -64,6 +68,10 @@ public class CharacterMovementController : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        _animator.SetBool("IsWalking", _agent.velocity.magnitude > 0f);
+    }
 
     #endregion
 
