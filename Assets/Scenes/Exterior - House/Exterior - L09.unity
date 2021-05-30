@@ -1251,6 +1251,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5400619795264172153, guid: 25c0bef82316c3e429cc5106a5c23638, type: 3}
+      propertyPath: Description
+      value: Take Bolt Cutter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431028903448250179, guid: 25c0bef82316c3e429cc5106a5c23638, type: 3}
+      propertyPath: _description
+      value: A bolt cutter. It may come in handy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514463989128347160, guid: 25c0bef82316c3e429cc5106a5c23638, type: 3}
+      propertyPath: Description
+      value: Look
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25c0bef82316c3e429cc5106a5c23638, type: 3}
 --- !u!4 &2084757086 stripped
