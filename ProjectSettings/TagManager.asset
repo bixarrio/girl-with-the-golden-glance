@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Navigation
   layers:
   - Default
   - TransparentFX
@@ -34,8 +35,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Do Not Render
+  - Interactable
   - Navigation
   m_SortingLayers:
   - name: Default
