@@ -8,3 +8,4 @@ public delegate void OptionsInteractableClicked(OptionsInteractable interactable
 public delegate void CloseMenu();
 public delegate void SetCursor(Sprite cursor);
 public delegate void GameEvent(string eventName);
+public delegate void StopTimeline();

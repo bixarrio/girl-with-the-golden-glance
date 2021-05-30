@@ -62,7 +62,7 @@ public class AudioController : MonoBehaviour
         _ambienceSource = CreateAudioSource("AmbienceAudioSource", _ambienceMixerGroup, 0f, true);
         _narrativeSource = CreateAudioSource("NarrativeAudioSource", _narrativeMixerGroup, 0f, false);
         for (int i = 0; i < _sfxSourceInstances; i++)
-            _sfxSources.Enqueue(CreateAudioSource($"SFXAudioSource{i:00}", _sfxMixerGroup, 1f, false));
+            _sfxSources.Enqueue(CreateAudioSource($"SFXAudioSource{i:00}", _sfxMixerGroup, .75f, false));
     }
 
     private AudioSource CreateAudioSource(string name, AudioMixerGroup group, float spatialBlend, bool loop)
