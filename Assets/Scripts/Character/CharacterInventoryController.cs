@@ -36,10 +36,6 @@ public class CharacterInventoryController : MonoBehaviour
     private void Start()
     {
         _inventoryCanvas.enabled = false;
-        //var item = Instantiate(_itemPrefab, _topLeftPocket.transform);
-        //item.CurrentSlot = _topLeftPocket;
-        //item.transform.localPosition = Vector3.zero;
-        //_topLeftPocket.CurrentInventoryItem = item;
 
         InitInventories();
         SetItemPrefab();
@@ -57,7 +53,14 @@ public class CharacterInventoryController : MonoBehaviour
 
     public bool TryAddItem(Item item)
     {
-        // let's first check if we have free slots in the big pockets
+        // let's first check the hand
+        if (_handEquipped.HasFreeSlot())
+        {
+            _handEquipped.AddItemToInventory(item);
+            return true;
+        }
+
+        // then check if we have free slots in the big pockets
         if (_rightPocketInventory.HasFreeSlot())
         {
             _rightPocketInventory.AddItemToInventory(item);
@@ -69,7 +72,7 @@ public class CharacterInventoryController : MonoBehaviour
             return true;
         }
 
-        // next, let's check the top pockets
+        // lastly, let's check the top pockets
         if (_topRightPocket.HasFreeSlot())
         {
             _topRightPocket.AddItemToInventory(item);
@@ -78,13 +81,6 @@ public class CharacterInventoryController : MonoBehaviour
         if (_topLeftPocket.HasFreeSlot())
         {
             _topLeftPocket.AddItemToInventory(item);
-            return true;
-        }
-
-        // last chance. check the hand
-        if (_handEquipped.HasFreeSlot())
-        {
-            _handEquipped.AddItemToInventory(item);
             return true;
         }
 
@@ -135,24 +131,24 @@ public class CharacterInventoryController : MonoBehaviour
 
     private void InitInventories()
     {
+        _handEquipped.Init();
+
         _leftPocketInventory.Init();
         _rightPocketInventory.Init();
 
         _topLeftPocket.Init();
         _topRightPocket.Init();
-
-        _handEquipped.Init();
     }
 
     private void SetItemPrefab()
     {
+        _handEquipped.SetItemPrefab(_itemPrefab);
+
         _leftPocketInventory.SetItemPrefab(_itemPrefab);
         _rightPocketInventory.SetItemPrefab(_itemPrefab);
 
         _topLeftPocket.SetItemPrefab(_itemPrefab);
         _topRightPocket.SetItemPrefab(_itemPrefab);
-
-        _handEquipped.SetItemPrefab(_itemPrefab);
     }
 
     private UIInventorySlot GetItemSlot(Item item)
@@ -165,6 +161,9 @@ public class CharacterInventoryController : MonoBehaviour
 
     private IEnumerable<UIInventorySlot> AggregateSlots()
     {
+        foreach (var slot in _handEquipped.UISlots)
+            yield return slot;
+
         foreach (var slot in _rightPocketInventory.UISlots)
             yield return slot;
 
@@ -175,9 +174,6 @@ public class CharacterInventoryController : MonoBehaviour
             yield return slot;
 
         foreach (var slot in _topLeftPocket.UISlots)
-            yield return slot;
-
-        foreach (var slot in _handEquipped.UISlots)
             yield return slot;
     }
 
