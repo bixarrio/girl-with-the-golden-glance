@@ -14,7 +14,7 @@ public class GameEventItemDropCondition : ItemDropCondition
 
     public override bool CanDrop()
     {
-        var result = GameEventController.Instance.GameEventOccurred(_eventName);
+        var result = GameEventController.Instance.GameEventIsSet(_eventName);
         return _not ? !result : result;
     }
 

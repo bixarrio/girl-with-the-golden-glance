@@ -7,5 +7,6 @@ public delegate void InteractableClicked(Interactable interactable, Vector3 mous
 public delegate void OptionsInteractableClicked(OptionsInteractable interactable, Vector3 mousePosition);
 public delegate void CloseMenu();
 public delegate void SetCursor(Sprite cursor);
-public delegate void GameEvent(string eventName);
+public delegate void GameEvent(string eventName, bool value);
+public delegate void ItemEvent(string itemName, string eventName, bool value);
 public delegate void StopTimeline();

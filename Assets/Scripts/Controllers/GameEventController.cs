@@ -9,6 +9,7 @@ public class GameEventController : MonoBehaviour
     public static GameEventController Instance => _instance;
 
     private Dictionary<string, bool> _gameEvents = new Dictionary<string, bool>();
+    private Dictionary<string, Dictionary<string, bool>> _itemEvents = new Dictionary<string, Dictionary<string, bool>>();
 
     #endregion
 
@@ -32,15 +33,16 @@ public class GameEventController : MonoBehaviour
 
     #region Public Methods
 
-    public bool GameEventOccurred(string eventName)
+    public bool GameEventIsSet(string eventName)
     {
-        // The events are dynamically added so these will always be true
-        // but I'm just storing a boolean anyway. Perhaps one day I will make events
-        // 'unhappen' again and then it will be useful. Like picking up a quest item
-        // will set the event, but dropping it again will unset it. Although I'll manage
-        // inventory things differently
         if (!_gameEvents.ContainsKey(eventName)) return false;
         return _gameEvents[eventName];
+    }
+    public bool ItemEventIsSet(string itemName, string eventName)
+    {
+        if (!_itemEvents.ContainsKey(itemName)) return false;
+        if (!_itemEvents[itemName].ContainsKey(eventName)) return false;
+        return _itemEvents[itemName][eventName];
     }
 
     #endregion
@@ -50,13 +52,20 @@ public class GameEventController : MonoBehaviour
     private void HookMessages()
     {
         Messaging<GameEvent>.Register(OnGameEvent);
+        Messaging<ItemEvent>.Register(OnItemEvent);
     }
     private void UnhookMessages()
     {
         Messaging<GameEvent>.Unregister(OnGameEvent);
+        Messaging<ItemEvent>.Unregister(OnItemEvent);
     }
 
-    private void OnGameEvent(string eventName) => _gameEvents[eventName] = true;
+    private void OnGameEvent(string eventName, bool value) => _gameEvents[eventName] = value;
+    private void OnItemEvent(string itemName, string eventName, bool value)
+    {
+        if (!_itemEvents.ContainsKey(itemName)) _itemEvents[itemName] = new Dictionary<string, bool>();
+        _itemEvents[itemName][eventName] = value;
+    }
 
     #endregion
 }

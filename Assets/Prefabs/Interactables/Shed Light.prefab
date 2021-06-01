@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &368272346183127114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7857124270760008003}
+  - component: {fileID: 2002816997904032305}
+  m_Layer: 0
+  m_Name: Condition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7857124270760008003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368272346183127114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8136572396451425860}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2002816997904032305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368272346183127114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724f0d2bac6974942af65efc48072099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _not: 0
+  _eventName: Light is on
+  _eventManager: {fileID: 2957041839578260678}
 --- !u!1 &841728989845236569
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +237,67 @@ MonoBehaviour:
   _not: 1
   _eventName: Light is on
   _eventManager: {fileID: 2957041839578260678}
+--- !u!1 &4613403645859010732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8136572396451425860}
+  - component: {fileID: 5151915618744704448}
+  - component: {fileID: 7501949222371933402}
+  m_Layer: 0
+  m_Name: State
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8136572396451425860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613403645859010732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7857124270760008003}
+  m_Father: {fileID: 8500093851982796159}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5151915618744704448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613403645859010732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ce495658185634e8553bdfdb5201d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activatable: {fileID: 8500093852250208040}
+  _condition: {fileID: 2002816997904032305}
+--- !u!114 &7501949222371933402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613403645859010732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ce495658185634e8553bdfdb5201d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activatable: {fileID: 8500093852205985711}
+  _condition: {fileID: 2002816997904032305}
 --- !u!1 &5187215575094119690
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +378,7 @@ Transform:
   - {fileID: 8907246530729931392}
   - {fileID: 4848188838372840626}
   m_Father: {fileID: 8500093851982796159}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5419814210601571509
 GameObject:
@@ -540,7 +647,7 @@ Transform:
   - {fileID: 8500093853078409553}
   - {fileID: 8500093852205985705}
   m_Father: {fileID: 8500093851982796159}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5}
 --- !u!33 &8500093851290174413
 MeshFilter:
@@ -653,7 +760,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 22.56, y: 3.73, z: 10.95}
+  m_ConnectedAnchor: {x: 22.472843, y: 3.7261949, z: 10.95}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -705,6 +812,7 @@ Transform:
   m_LocalPosition: {x: 22.56, y: 2.23, z: 10.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8136572396451425860}
   - {fileID: 8500093851290174414}
   - {fileID: 8417703209992522438}
   m_Father: {fileID: 0}
@@ -722,6 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234b7212d60c2bd45b727244fdcad906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uniqueName: Shed Light Inside
 --- !u!1 &8500093852205985704
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 8500093852250208042}
+  _initialState: 0
 --- !u!114 &6912088350631370706
 MonoBehaviour:
   m_ObjectHideFlags: 0
