@@ -10,7 +10,7 @@ public class IntroSignalReceiver : SignalReceiver
 
     [SerializeField] Transform[] _buckyPositions;
     [SerializeField] Transform[] _thugPositions;
-    [SerializeField] AudioClip _hitAudio;
+    [SerializeField] AudioClip _music;
     [SerializeField] Volume _postProcessingVolume;
 
     #endregion
@@ -26,8 +26,8 @@ public class IntroSignalReceiver : SignalReceiver
     public void ChangeScene(string sceneName)
         => SceneTransition.Instance.DoTransition(sceneName, null, TransitionType.Fade);
 
-    public void PlayHitAudio()
-        => Messaging<PlayAudio>.Trigger?.Invoke(_hitAudio, AudioGroups.SFX, transform);
+    public void StartMusic()
+        => Messaging<PlayAudio>.Trigger?.Invoke(_music, AudioGroups.Music);
 
     public void DoBrainFart(float restoreTime)
         => StartCoroutine(BrainFartRoutine(restoreTime));

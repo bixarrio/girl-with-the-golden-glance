@@ -21086,6 +21086,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1860241596}
     m_Modifications:
+    - target: {fileID: 265401709350492446, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
+      propertyPath: _uniqueName
+      value: Locked Garden Gate
+      objectReference: {fileID: 0}
     - target: {fileID: 2918299848772168679, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -21134,6 +21138,14 @@ PrefabInstance:
       propertyPath: _targetScene
       value: Exterior - L06
       objectReference: {fileID: 0}
+    - target: {fileID: 5005977655956906768, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
+      propertyPath: _item
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a484cf9b1a69cb44a5fc1c111de5eb6, type: 2}
+    - target: {fileID: 6483257942123777999, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
+      propertyPath: _requiredItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a484cf9b1a69cb44a5fc1c111de5eb6, type: 2}
     - target: {fileID: 8619973224805100564, guid: ff7430bcd481a6f4cbfb272427a410bb, type: 3}
       propertyPath: m_Name
       value: Locked Door

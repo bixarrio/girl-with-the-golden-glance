@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sorry you ded.unity
     guid: f7235e8e47ca8504a9290f7810637863
+  - enabled: 1
+    path: Assets/Scenes/Coming soon.unity
+    guid: 64a78726ecd406d4aa505909c3f87805
+  - enabled: 1
+    path: Assets/Scenes/Blank.unity
+    guid: 9a814171e6d7cac49a0f0080c0847ba2
   m_configObjects: {}

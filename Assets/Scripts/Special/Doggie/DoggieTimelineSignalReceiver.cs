@@ -12,7 +12,7 @@ public class DoggieTimelineSignalReceiver : SignalReceiver
 
     public void RelinquishControl() => CharacterController.Instance.RelinquishControl();
 
-    public void ChangeScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null);
+    public void ChangeScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null, TransitionType.Fade);
 
     #endregion
 }
