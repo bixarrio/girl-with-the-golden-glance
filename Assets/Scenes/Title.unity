@@ -303,6 +303,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2078673711693136284, guid: 26558632bd7c7864793ce5f5262b6b23, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078673711693136284, guid: 26558632bd7c7864793ce5f5262b6b23, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078673711693136284, guid: 26558632bd7c7864793ce5f5262b6b23, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 960
+      objectReference: {fileID: 0}
     - target: {fileID: 2078673711693136286, guid: 26558632bd7c7864793ce5f5262b6b23, type: 3}
       propertyPath: m_Name
       value: Title Canvas
