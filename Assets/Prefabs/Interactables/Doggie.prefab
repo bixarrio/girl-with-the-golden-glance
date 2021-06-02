@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _freakOutStrength: 1
+  _targetOffset: 1
   _patrolArea: {fileID: 2028681897938610390}
   _doggieBark: {fileID: 8300000, guid: 8fc8aeab954e6844cbf7a3a1fc8a0900, type: 3}
 --- !u!114 &8060510320978065550
