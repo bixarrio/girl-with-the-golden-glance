@@ -22800,8 +22800,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6310699212186800587, guid: be287edfd03bbe64d8a5b71a9c9e0e4a, type: 3}
+      propertyPath: _targetOffset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310699212186800587, guid: be287edfd03bbe64d8a5b71a9c9e0e4a, type: 3}
       propertyPath: _freakOutStrength
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be287edfd03bbe64d8a5b71a9c9e0e4a, type: 3}
