@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Pause.unity
+    guid: 89ca73ccaacda3041979f48d67826965
+  - enabled: 1
+    path: Assets/Scenes/Blank.unity
+    guid: 9a814171e6d7cac49a0f0080c0847ba2
+  - enabled: 1
+    path: Assets/Scenes/Brightness.unity
+    guid: 5f3756c8a2761b248ae94cfa058de22c
+  - enabled: 1
     path: Assets/Scenes/Intro Cutscene.unity
     guid: 156a343d4040408468cb1ea35e250ccc
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: dcefa6bd6d068a34e824a7572046867a
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6eb0168b55ab3f6499e6f8769943a9a3
   - enabled: 1
     path: Assets/Scenes/Thank you.unity
     guid: 3332edd7df428314ab013c1a350317c4
@@ -20,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Coming soon.unity
     guid: 64a78726ecd406d4aa505909c3f87805
-  - enabled: 1
-    path: Assets/Scenes/Blank.unity
-    guid: 9a814171e6d7cac49a0f0080c0847ba2
   - enabled: 1
     path: Assets/Scenes/Exterior - House/Exterior - L00.unity
     guid: 611feaf6a45d4ac43b2788a12449dbe8

@@ -2470,6 +2470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sledgehammer
       objectReference: {fileID: 0}
+    - target: {fileID: 3678326744236373253, guid: 20c31b83172a74f4897adef6b6f7f42b, type: 3}
+      propertyPath: _description
+      value: A sledgehammer. This is too heavy
+      objectReference: {fileID: 0}
     - target: {fileID: 8904187678852461368, guid: 20c31b83172a74f4897adef6b6f7f42b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3031,6 +3035,14 @@ PrefabInstance:
     - target: {fileID: 8500093851982796159, guid: ba90fb091502aba4baf12df1b6661313, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500093852205985710, guid: ba90fb091502aba4baf12df1b6661313, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500093852205985710, guid: ba90fb091502aba4baf12df1b6661313, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba90fb091502aba4baf12df1b6661313, type: 3}

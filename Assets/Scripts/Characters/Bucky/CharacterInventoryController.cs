@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterInventoryController : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class CharacterInventoryController : MonoBehaviour
 
     private void Start()
     {
+        if (_inventoryCanvas == null) return;
+
         _inventoryCanvas.enabled = false;
 
         InitInventories();
@@ -44,6 +47,7 @@ public class CharacterInventoryController : MonoBehaviour
     private void LateUpdate()
     {
         if (!CharacterController.Instance.IsInControl) return;
+        if (SceneManager.GetActiveScene().name == "Menu") return;
 
         if (Input.GetKeyDown(KeyCode.Tab)) _inventoryCanvas.enabled = !_inventoryCanvas.enabled;
     }
