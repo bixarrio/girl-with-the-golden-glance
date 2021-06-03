@@ -106,7 +106,7 @@ public class CharacterMovementController : MonoBehaviour
         if (!CharacterController.Instance.IsInControl) return;
 
         _isTurning = true;
-        _targetRotation = Quaternion.LookRotation(direction - transform.position);
+        _targetRotation = Quaternion.LookRotation(direction);
     }
 
     public void Teleport(Vector3 position, Vector3 lookDirection)
