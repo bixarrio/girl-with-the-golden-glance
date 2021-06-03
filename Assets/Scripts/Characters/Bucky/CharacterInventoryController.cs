@@ -56,6 +56,15 @@ public class CharacterInventoryController : MonoBehaviour
 
     #region Public Methods
 
+    public void Clear()
+    {
+        _handEquipped.Clear();
+        _leftPocketInventory.Clear();
+        _rightPocketInventory.Clear();
+        _topLeftPocket.Clear();
+        _topRightPocket.Clear();
+    }
+
     public bool TryAddItem(Item item)
     {
         // let's first check the hand
