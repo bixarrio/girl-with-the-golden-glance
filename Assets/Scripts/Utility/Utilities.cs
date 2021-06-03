@@ -6,5 +6,9 @@ public class Utilities
 {
     public static Vector3 GetMousePosition() => GetMousePosition(Camera.main);
     public static Vector3 GetMousePosition(Camera camera)
-        => camera.ScreenToWorldPoint(Input.mousePosition);
+    {
+        var vmouse = Input.mousePosition;
+        vmouse.z = Camera.main.transform.position.z;
+        return camera.ScreenToWorldPoint(vmouse);
+    }
 }

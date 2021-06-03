@@ -29,14 +29,12 @@ public class MenuButtons : MonoBehaviour
         // Cutscene should go hete
         SceneTransition.Instance.DoTransition("Exterior - L00", null, TransitionType.Fade);
     }
-    public void AudioClicked() { }
+    public void AudioClicked()
+    {
+        SceneTransition.Instance.DoTransition("Audio", HideBucky, TransitionType.Fade);
+    }
     public void BrightnessClicked()
     {
-        void HideBucky()
-        {
-            var bucky = GameObject.Find("Buckshot Jones");
-            Destroy(bucky);
-        }
         Messaging<GameEvent>.Trigger?.Invoke("From Menu", true);
         SceneTransition.Instance.DoTransition("Brightness", HideBucky, TransitionType.Fade);
     }
@@ -52,6 +50,16 @@ public class MenuButtons : MonoBehaviour
         }
 
         SceneTransition.Instance.DoTransition("Intro Cutscene", Cleanup, TransitionType.Fade);
+    }
+
+    #endregion
+    
+    #region Private Methods
+    
+    private void HideBucky()
+    {
+        var bucky = GameObject.Find("Buckshot Jones");
+        Destroy(bucky);
     }
 
     #endregion
