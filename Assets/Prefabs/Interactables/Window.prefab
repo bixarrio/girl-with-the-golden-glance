@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuIcon: {fileID: 21300000, guid: fba7d5042bb55b34bafc831a9cb3292c, type: 3}
-  Description: Description
+  Description: Climb Through
   Interaction: {fileID: 1220750567311462424}
   Condition: {fileID: 4732974477956560618}
 --- !u!1 &7279642317596569421

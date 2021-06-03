@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac67bcb09dee994c970571539d3a569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _overCursor: {fileID: 0}
+  _overCursor: {fileID: 21300000, guid: 2ac827c9f96110b428afc323a11958c8, type: 3}
   _interactRadius: 1.5
   _hasFront: 1
   _interaction: {fileID: 0}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuIcon: {fileID: 21300000, guid: fba7d5042bb55b34bafc831a9cb3292c, type: 3}
-  Description: Enter
+  Description: Exit
   Interaction: {fileID: 8667508648676094620}
   Condition: {fileID: 0}
 --- !u!1 &2133750761563816422
