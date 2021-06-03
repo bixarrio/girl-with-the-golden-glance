@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro Cutscene.unity
+    guid: 156a343d4040408468cb1ea35e250ccc
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: dcefa6bd6d068a34e824a7572046867a
+  - enabled: 1
+    path: Assets/Scenes/Thank you.unity
+    guid: 3332edd7df428314ab013c1a350317c4
+  - enabled: 1
+    path: Assets/Scenes/Sorry you ded.unity
+    guid: f7235e8e47ca8504a9290f7810637863
+  - enabled: 1
+    path: Assets/Scenes/Coming soon.unity
+    guid: 64a78726ecd406d4aa505909c3f87805
+  - enabled: 1
+    path: Assets/Scenes/Blank.unity
+    guid: 9a814171e6d7cac49a0f0080c0847ba2
+  - enabled: 1
     path: Assets/Scenes/Exterior - House/Exterior - L00.unity
     guid: 611feaf6a45d4ac43b2788a12449dbe8
   - enabled: 1
@@ -35,4 +53,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exterior - House/Exterior - L09.unity
     guid: 2a6ffa4c8351fd04ca63a283235a6c0d
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L00.unity
+    guid: e840c6d1c82d13349b107f83ee07af36
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L01.unity
+    guid: d60d7c96c9ddab245b70a1f8622fd24e
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L02.unity
+    guid: 24f289d352c5f7f408b76ce952ede484
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L03.unity
+    guid: 855f8860a19bdc04da4944619734f942
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L04.unity
+    guid: d32c6b1333acb724da1f48eee4dc55ac
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L05.unity
+    guid: 0baf06fa1aec98046898e31d8faf2509
+  - enabled: 1
+    path: Assets/Scenes/Interior - House/Interior - L06.unity
+    guid: c60ae2b7c9165ee4782d1b8b82b6e7c8
   m_configObjects: {}

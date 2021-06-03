@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a017adaf90f126488ad8d222de36a00, type: 3}
+  m_Name: Bolt Cutter
+  m_EditorClassIdentifier: 
+  ItemName: Bolt Cutter
+  ItemDescription: I stole this from someone's garden shed. Maybe I'll return it
+    at some point
+  NarrativeAudio: {fileID: 0}
+  InventoryIcon: {fileID: 21300000, guid: 496381ec2ed12a140b17b05301080c3f, type: 3}
+  ItemPrefab: {fileID: 3002643012779839210, guid: 838770a5914e6da43a0c711c9ec7b576, type: 3}
+  DropCondition: {fileID: 0}

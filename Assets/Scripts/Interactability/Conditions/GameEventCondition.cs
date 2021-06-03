@@ -11,7 +11,7 @@ public class GameEventCondition : InteractionCondition
     #region Override Methods
 
     public override bool ConditionMet()
-        => EvaluateWithNot(() => GameEventController.Instance.GameEventOccurred(_eventName));
+        => EvaluateWithNot(() => GameEventController.Instance.GameEventIsSet(_eventName));
 
     #endregion
 }

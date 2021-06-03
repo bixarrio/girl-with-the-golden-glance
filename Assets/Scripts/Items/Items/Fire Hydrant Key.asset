@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a017adaf90f126488ad8d222de36a00, type: 3}
+  m_Name: Fire Hydrant Key
+  m_EditorClassIdentifier: 
+  ItemName: Fire Hydrant Key
+  ItemDescription: I found this lying around. I hope no-one is looking for it
+  NarrativeAudio: {fileID: 0}
+  InventoryIcon: {fileID: 21300000, guid: 0107c2508798f804480e9aa0255b5e6d, type: 3}
+  ItemPrefab: {fileID: 371063551275491, guid: 3e52dbf8d466cab4d9fe00ac26a0dd9d, type: 3}
+  DropCondition: {fileID: 0}
