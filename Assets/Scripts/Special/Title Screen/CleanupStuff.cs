@@ -20,7 +20,7 @@ public class CleanupStuff : MonoBehaviour
     private void OnDisable()
     {
         // Create Bucky
-        Instantiate(_buckyPrefab, Vector3.zero, Quaternion.identity, transform);
+        //Instantiate(_buckyPrefab, Vector3.zero, Quaternion.identity, transform);
     }
 
     #endregion

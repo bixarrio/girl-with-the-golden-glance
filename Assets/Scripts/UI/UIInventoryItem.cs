@@ -42,6 +42,8 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public Item GetItem() => _item;
     public bool HasItem(Item item) => _item == item;
 
+    public bool CanDropItem() => _item.DropCondition?.CanDrop() ?? true;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         // only drag with the left mouse button
@@ -87,7 +89,7 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             {
                 if (_item.DropCondition?.CanDrop() ?? true) // no condition == true
                 {
-                    dropped = CharacterInventoryController.Instance.TryRemoveItem(_item);
+                    dropped = CharacterInventoryController.Instance.TryRemoveItem(_item, true);
                     continue;
                 }
             }

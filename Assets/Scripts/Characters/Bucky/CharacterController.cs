@@ -32,6 +32,7 @@ public class CharacterController : MonoBehaviour
     #region Public Methods
 
     public void RelinquishControl() => _isInControl = false;
+    public void RegainControl() => _isInControl = true;
 
     #endregion
 }

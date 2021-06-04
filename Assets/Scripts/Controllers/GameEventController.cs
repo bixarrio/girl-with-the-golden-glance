@@ -45,6 +45,12 @@ public class GameEventController : MonoBehaviour
         return _itemEvents[itemName][eventName];
     }
 
+    public void ResetEvents()
+    {
+        _gameEvents.Clear();
+        _itemEvents.Clear();
+    }
+
     #endregion
 
     #region Private Methods

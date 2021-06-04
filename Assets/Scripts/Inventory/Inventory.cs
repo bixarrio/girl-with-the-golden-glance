@@ -38,11 +38,21 @@ public class Inventory
         _slots.First(s => s.UIInventorySlot.CurrentInventoryItem == null).AddItemToSlot(item);
     }
 
-    public bool TryRemoveItem(Item item)
+
+    public bool TryRemoveItem(Item item, bool checkConditions = false)
     {
         var slot = _slots.FirstOrDefault(s => s.UIInventorySlot.CurrentInventoryItem?.HasItem(item) ?? false);
         if (slot == null) return false;
-        return slot.UIInventorySlot.TryRemoveItem();
+        return slot.UIInventorySlot.TryRemoveItem(checkConditions);
+    }
+
+    public void Clear()
+    {
+        _slots.ForEach(s =>
+        {
+            s.UIInventorySlot.TryRemoveItem();
+            s.UpdateUI();
+        });
     }
 
     public void ShuffleInventory() => ShuffleItems();

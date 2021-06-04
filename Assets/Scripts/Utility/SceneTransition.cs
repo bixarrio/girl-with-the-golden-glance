@@ -58,6 +58,7 @@ public class SceneTransition : MonoBehaviour
     private IEnumerator DoRadialTransitionRoutine(string targetScene, System.Action callback)
     {
         _transitionImage.fillAmount = 0f;
+        _transitionGroup.alpha = 1f;
         _transitionImage.enabled = true;
 
         yield return RadialTransitionFrom(0f, 1f);
@@ -88,6 +89,7 @@ public class SceneTransition : MonoBehaviour
 
     private IEnumerator DoFadeTransitionRoutine(string targetScene, System.Action callback)
     {
+        _transitionGroup.alpha = 0f;
         _transitionImage.fillAmount = 1f;
         _transitionImage.enabled = true;
 

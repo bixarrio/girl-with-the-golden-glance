@@ -15,6 +15,18 @@ public class IntroSignalReceiver : SignalReceiver
 
     #endregion
 
+    #region Unity Methods
+
+    private void Start()
+    {
+        if (CharacterMovementController.Instance != null)
+            Destroy(CharacterMovementController.Instance.gameObject);
+        if (UIInventoryGroup.Instance != null)
+            Destroy(UIInventoryGroup.Instance.gameObject);
+    }
+
+    #endregion
+
     #region Public Methods
 
     public void BuckyGoToPosition(int idx)
