@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class SignalHandler : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class SignalHandler : MonoBehaviour
 
     [SerializeField] GameObject[] _uiShot;
     [SerializeField] Transform[] _position;
+    [SerializeField] PlayableDirector _director;
 
     #endregion
 
@@ -28,10 +30,22 @@ public class SignalHandler : MonoBehaviour
         CharacterMovementController.Instance.SetDestination(_position[idx].position);
     }
 
+    public void StopTimelineIfPlayed()
+    {
+        if (GameEventController.Instance.GameEventIsSet("Opening Scene Played"))
+        {
+            _director.Stop();
+        }
+        else
+        {
+            Messaging<GameEvent>.Trigger?.Invoke("Opening Scene Played", true);
+        }
+    }
+
     public void SaySomething(string narrative) => Messaging<ShowNarrative>.Trigger?.Invoke(narrative);
 
-    public void RelinquishControl() => CharacterController.Instance.RelinquishControl();
-    public void RegainControl() => CharacterController.Instance.RegainControl();
+    public void RelinquishControl() => CharacterController.Instance.RelinquishControl(true);
+    public void RegainControl() => CharacterController.Instance.RegainControl(true);
 
     #endregion
 

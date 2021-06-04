@@ -52,7 +52,7 @@ public class CharacterMovementController : MonoBehaviour
 
     private void Update()
     {
-        if (!CharacterController.Instance.IsInControl)
+        if (!CharacterController.Instance.IsInControl && !CharacterController.Instance.IsInCutscene)
         {
             _agent.isStopped = true;
             return;
@@ -83,9 +83,9 @@ public class CharacterMovementController : MonoBehaviour
 
     #region Public Methods
 
-    public void SetDestination(Vector3 position, bool cutscene = false)
+    public void SetDestination(Vector3 position)
     {
-        if (!CharacterController.Instance.IsInControl && !cutscene) return;
+        if (!CharacterController.Instance.IsInControl && !CharacterController.Instance.IsInCutscene) return;
 
         _isTurning = false;
         _agent.isStopped = false;
@@ -103,7 +103,7 @@ public class CharacterMovementController : MonoBehaviour
 
     public void SetLookDirection(Vector3 direction)
     {
-        if (!CharacterController.Instance.IsInControl) return;
+        if (!CharacterController.Instance.IsInControl && !CharacterController.Instance.IsInCutscene) return;
 
         _isTurning = true;
         _targetRotation = Quaternion.LookRotation(direction);
@@ -123,6 +123,8 @@ public class CharacterMovementController : MonoBehaviour
 
     private void OnClick()
     {
+        if (!CharacterController.Instance.IsInControl) return;
+
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
         {

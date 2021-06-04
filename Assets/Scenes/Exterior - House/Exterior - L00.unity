@@ -10376,7 +10376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &721917957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26892,6 +26892,7 @@ MonoBehaviour:
   - {fileID: 721917956}
   _position:
   - {fileID: 2108308026}
+  _director: {fileID: 2005363794}
 --- !u!114 &2005363793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26913,6 +26914,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f4ee58de091c4b24cad4069ee440f878, type: 2}
     - {fileID: 11400000, guid: 369b9428a288f1a458737e3802a2fdcd, type: 2}
     - {fileID: 11400000, guid: 5bf22a9cd3f002642970e7bf32710deb, type: 2}
+    - {fileID: 11400000, guid: 001277afb472cf24aa86350bdafd273c, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -27012,6 +27014,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2005363792}
+          m_TargetAssemblyTypeName: SignalHandler, Assembly-CSharp
+          m_MethodName: StopTimelineIfPlayed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!320 &2005363794
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -27030,7 +27046,8 @@ PlayableDirector:
   - key: {fileID: 2977788343233515538, guid: 3e39d0b0a50a6c541a856b03d999b85d, type: 2}
     value: {fileID: 2005363791}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - c79cbc97719b1a54785282343f3d3129: {fileID: 721917956}
 --- !u!4 &2005363795
 Transform:
   m_ObjectHideFlags: 0
