@@ -18,4 +18,4 @@ MonoBehaviour:
   NarrativeAudio: {fileID: 0}
   InventoryIcon: {fileID: 21300000, guid: 496381ec2ed12a140b17b05301080c3f, type: 3}
   ItemPrefab: {fileID: 3002643012779839210, guid: 838770a5914e6da43a0c711c9ec7b576, type: 3}
-  DropCondition: {fileID: 0}
+  DropCondition: {fileID: 11400000, guid: f81a86699651af94cab45c57dc9b0929, type: 2}

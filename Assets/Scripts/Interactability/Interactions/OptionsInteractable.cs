@@ -18,6 +18,7 @@ public class OptionsInteractable : Interactable
     protected override void OnMouseDown()
     {
         if (!_optionsAvailableCondition?.ConditionMet() ?? false) return;
+        if (!HasOptionsAvailable()) return;
         if (!Input.GetMouseButtonDown(0)) return;
         if (EventSystem.current.IsPointerOverGameObject()) return;
         Messaging<OptionsInteractableClicked>.Trigger?.Invoke(this, Input.mousePosition);
@@ -26,12 +27,14 @@ public class OptionsInteractable : Interactable
     protected override void OnMouseOver()
     {
         if (!_optionsAvailableCondition?.ConditionMet() ?? false) return;
+        if (!HasOptionsAvailable()) return;
         base.OnMouseOver();
     }
 
     protected override void OnMouseExit()
     {
         if (!_optionsAvailableCondition?.ConditionMet() ?? false) return;
+        if (!HasOptionsAvailable()) return;
         base.OnMouseExit();
     }
 
@@ -45,6 +48,20 @@ public class OptionsInteractable : Interactable
         option.Interaction.Execute();
     }
 
+
+    #endregion
+
+    #region Private Methods
+
+    private bool HasOptionsAvailable()
+    {
+        foreach(var option in _interactionMenuOptions)
+        {
+            if (option.Condition?.ConditionMet() ?? true)
+                return true;
+        }
+        return false;
+    }
 
     #endregion
 }

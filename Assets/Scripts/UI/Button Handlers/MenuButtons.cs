@@ -58,8 +58,8 @@ public class MenuButtons : MonoBehaviour
     
     private void HideBucky()
     {
-        var bucky = GameObject.Find("Buckshot Jones");
-        Destroy(bucky);
+        Destroy(CharacterMovementController.Instance.gameObject);
+        Destroy(UIInventoryGroup.Instance.gameObject);
     }
 
     #endregion

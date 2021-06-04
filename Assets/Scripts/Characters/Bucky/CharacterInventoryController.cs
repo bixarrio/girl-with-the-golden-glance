@@ -120,7 +120,7 @@ public class CharacterInventoryController : MonoBehaviour
         return _handEquipped.TryRemoveItem(item);
     }
 
-    public bool TryRemoveItem(Item item)
+    public bool TryRemoveItem(Item item, bool checkConditions = false)
     {
         // If we don't have it, we can't drop it
         if (!HasItem(item)) return false;
@@ -130,12 +130,12 @@ public class CharacterInventoryController : MonoBehaviour
         // Create a world version
         var world = GameObject.Find("World");
         var holding = slot.CurrentInventoryItem.GetItem();
-        var dropPos = transform.TransformVector(new Vector3(transform.position.x, 1f, transform.position.z + 0.3f));
+        var dropPos = transform.position + transform.forward + transform.up;  // new Vector3(transform.position.x, 1f, transform.position.z + 0.3f);
         Debug.Log($"Dropping at {dropPos}");
         Instantiate(holding.ItemPrefab, dropPos, Random.rotation, world.transform);
 
         // remove from inventory
-        slot.TryRemoveItem();
+        slot.TryRemoveItem(checkConditions);
         return true;
     }
 
