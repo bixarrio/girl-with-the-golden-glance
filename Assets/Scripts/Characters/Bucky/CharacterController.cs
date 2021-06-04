@@ -12,6 +12,9 @@ public class CharacterController : MonoBehaviour
     private bool _isInControl = true;
     public bool IsInControl => _isInControl;
 
+    private bool _isInCutscene = false;
+    public bool IsInCutscene => _isInCutscene;
+
     #endregion
 
     #region Unity Methods
@@ -31,8 +34,17 @@ public class CharacterController : MonoBehaviour
 
     #region Public Methods
 
-    public void RelinquishControl() => _isInControl = false;
-    public void RegainControl() => _isInControl = true;
+    public void RelinquishControl(bool cutscene = false)
+    {
+        _isInControl = false;
+        if (cutscene) _isInCutscene = true;
+    }
+
+    public void RegainControl(bool cutscene = false)
+    {
+        _isInControl = true;
+        if (cutscene) _isInCutscene = false;
+    }
 
     #endregion
 }

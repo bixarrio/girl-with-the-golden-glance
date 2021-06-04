@@ -44,8 +44,8 @@ public class SignalHandler : MonoBehaviour
 
     public void SaySomething(string narrative) => Messaging<ShowNarrative>.Trigger?.Invoke(narrative);
 
-    public void RelinquishControl() => CharacterController.Instance.RelinquishControl();
-    public void RegainControl() => CharacterController.Instance.RegainControl();
+    public void RelinquishControl() => CharacterController.Instance.RelinquishControl(true);
+    public void RegainControl() => CharacterController.Instance.RegainControl(true);
 
     #endregion
 

@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Exterior - House/Exterior - L09.unity
     guid: 2a6ffa4c8351fd04ca63a283235a6c0d
   - enabled: 1
+    path: Assets/Scenes/Flashback/Flashback.unity
+    guid: 78035ea51c7f2f34a9fd6c75c75daee8
+  - enabled: 1
     path: Assets/Scenes/Interior - House/Interior - L00.unity
     guid: e840c6d1c82d13349b107f83ee07af36
   - enabled: 1
