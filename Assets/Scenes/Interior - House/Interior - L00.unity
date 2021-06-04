@@ -1646,8 +1646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd29e0b1a33b2b24e83635c6ebb2a6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stopAmbience: 0
-  _sceneAmbienceClip: {fileID: 8300000, guid: c4c69d2e890d1bc43a3cb0608a475e84, type: 3}
+  _stopAmbience: 1
+  _sceneAmbienceClip: {fileID: 8300000, guid: 0f2a4aea65d02ec48a930b73303ead51, type: 3}
 --- !u!1 &1932736082
 GameObject:
   m_ObjectHideFlags: 0
