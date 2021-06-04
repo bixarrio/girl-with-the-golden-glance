@@ -83,9 +83,9 @@ public class CharacterMovementController : MonoBehaviour
 
     #region Public Methods
 
-    public void SetDestination(Vector3 position)
+    public void SetDestination(Vector3 position, bool cutscene = false)
     {
-        if (!CharacterController.Instance.IsInControl) return;
+        if (!CharacterController.Instance.IsInControl && !cutscene) return;
 
         _isTurning = false;
         _agent.isStopped = false;

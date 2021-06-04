@@ -15,8 +15,8 @@ public class AmbiencePlayer : MonoBehaviour
     {
         if (_stopAmbience)
             Messaging<StopAudio>.Trigger?.Invoke(AudioGroups.Ambience);
-        else
-            Messaging<PlayAudio>.Trigger?.Invoke(_sceneAmbienceClip, AudioGroups.Ambience);
+
+        Messaging<PlayAudio>.Trigger?.Invoke(_sceneAmbienceClip, AudioGroups.Ambience);
     }
 
     #endregion
