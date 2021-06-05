@@ -388,6 +388,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629256009}
+  - component: {fileID: 629256011}
+  - component: {fileID: 629256010}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -410,11 +412,49 @@ RectTransform:
   m_Father: {fileID: 721917957}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: -10}
-  m_SizeDelta: {x: -10, y: 100}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &629256010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629256008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &629256011
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629256008}
+  m_CullTransparentMesh: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,13 +557,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721917957}
+  - component: {fileID: 721917958}
   m_Layer: 5
   m_Name: UI Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &721917957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -544,6 +585,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &721917958
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721917956}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &746281383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6896,8 +6949,8 @@ MonoBehaviour:
   - What is it that I can do for you?
   _portiaDialog:
   - ...but Detective Jones. I need your help. I <b>need</b> you.
-  - My friend borrowed money from a sleazy loanshark, and now my friend is in danger
-  - He can't pay the money back and now the loanshark wants to cut his hands off
+  - My friend borrowed money from a sleazy loanshark, and now he's in danger
+  - He can't pay the money back and the loanshark wants to cut his hands off
   - Oh, Bucky! You have to help me
   - My friend have expensive jewels at his house
   - Please, Bucky. I will do <b>anything</b> if you can collect the jewels
@@ -7221,7 +7274,8 @@ PlayableDirector:
   - key: {fileID: 4881099763597837070, guid: 57c93c885d7d6a14db0a4cef67c174f8, type: 2}
     value: {fileID: 2005363791}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 965f8eae7d018cf4a9c8cdd78027e6d5: {fileID: 721917956}
 --- !u!4 &2005363795
 Transform:
   m_ObjectHideFlags: 0
@@ -7250,7 +7304,7 @@ GameObject:
   - component: {fileID: 2066385650}
   - component: {fileID: 2066385649}
   m_Layer: 5
-  m_Name: This is the place
+  m_Name: Earlier Today
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7270,10 +7324,10 @@ RectTransform:
   m_Father: {fileID: 629256009}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -225, y: 0}
-  m_SizeDelta: {x: -450, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066385649
 MonoBehaviour:
@@ -7297,12 +7351,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 52e66c439255c2a428ee8a3f86b3185b, type: 3}
-    m_FontSize: 25
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
