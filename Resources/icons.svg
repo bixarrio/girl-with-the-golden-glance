@@ -68,9 +68,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="279.88058"
-     inkscape:cy="321.03717"
+     inkscape:zoom="0.35"
+     inkscape:cx="459.71033"
+     inkscape:cy="771.41201"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -417,6 +417,33 @@
          id="path940"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.46512;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 98.324782,133.80372 a 16.303693,16.303693 0 0 0 -3.260911,0.3293 l 8.885169,8.88517 c 2.06213,2.06212 2.06213,5.38222 0,7.44433 l -5.051849,5.05186 c -2.062117,2.06212 -5.382211,2.06212 -7.444332,0 l -9.025453,-9.02546 a 16.303693,16.303693 0 0 0 -0.406574,3.61815 16.303693,16.303693 0 0 0 16.30395,16.30395 16.303693,16.303693 0 0 0 3.643108,-0.41252 c 0.0948,0.11186 0.19161,0.22252 0.2972,0.32811 l 12.2299,12.22989 c 2.06212,2.06213 5.38281,2.06213 7.44493,0 l 5.05125,-5.05125 c 2.06213,-2.06212 2.06213,-5.38222 0,-7.44434 l -12.22989,-12.23048 c -0.1506,-0.15061 -0.30951,-0.28689 -0.47255,-0.41549 a 16.303693,16.303693 0 0 0 0.3394,-3.30787 16.303693,16.303693 0 0 0 -16.303348,-16.30335 z" />
+    </g>
+    <g
+       id="g909"
+       transform="translate(114.90476,-109.6131)"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\cursor_up_down.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle903"
+         cx="128.89"
+         cy="209.99057"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <g
+         id="g901"
+         transform="matrix(0.48774923,0,0,0.48774923,73.213951,142.20609)">
+        <path
+           id="rect892"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.43958;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 114.14873,59.404763 88.350622,104.08879 h 12.648118 v 23.71604 h 26.29998 v -23.71604 h 12.6485 z" />
+        <path
+           id="path897"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.43958;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 114.14873,218.54329 88.350623,173.85926 h 12.648117 v -23.71604 h 26.29998 v 23.71604 h 12.6485 z" />
+      </g>
     </g>
   </g>
 </svg>
