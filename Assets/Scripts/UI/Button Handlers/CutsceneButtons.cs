@@ -13,7 +13,11 @@ public class CutsceneButtons : MonoBehaviour
 
     #region Public Methods
 
-    public void SkipCutscene() => SceneTransition.Instance.DoTransition(_targetScene, null, _transitionType);
+    public void SkipCutscene()
+    {
+        CharacterController.Instance.RegainControl();
+        SceneTransition.Instance.DoTransition(_targetScene, null, _transitionType);
+    }
 
     #endregion
 }
