@@ -52,6 +52,8 @@ public class UIInventoryGroup : MonoBehaviour
         _itemDescriptionText.text = string.Empty;
     }
 
+    public void OpenInventory() => _canvas.enabled = true;
+
     public void CloseInventory() => _canvas.enabled = false;
 
     #endregion
