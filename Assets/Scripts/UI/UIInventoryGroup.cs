@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIInventoryGroup : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class UIInventoryGroup : MonoBehaviour
 
     private static UIInventoryGroup _instance;
     public static UIInventoryGroup Instance => _instance;
+
+    [SerializeField] Text _itemNameText;
+    [SerializeField] Text _itemDescriptionText;
 
     private Canvas _canvas;
 
@@ -35,6 +39,20 @@ public class UIInventoryGroup : MonoBehaviour
     #endregion
 
     #region Public Methods
+
+    public void ShowItemInfo(Item item)
+    {
+        _itemNameText.text = item.ItemName;
+        _itemDescriptionText.text = item.ItemDescription;
+    }
+
+    public void ClearItemInfo()
+    {
+        _itemNameText.text = string.Empty;
+        _itemDescriptionText.text = string.Empty;
+    }
+
+    public void OpenInventory() => _canvas.enabled = true;
 
     public void CloseInventory() => _canvas.enabled = false;
 

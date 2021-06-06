@@ -31,12 +31,12 @@ public class MenuButtons : MonoBehaviour
     }
     public void AudioClicked()
     {
-        SceneTransition.Instance.DoTransition("Audio", HideBucky, TransitionType.Fade);
+        SceneTransition.Instance.DoTransition("Audio", KillBucky, TransitionType.Fade);
     }
     public void BrightnessClicked()
     {
         Messaging<GameEvent>.Trigger?.Invoke("From Menu", true);
-        SceneTransition.Instance.DoTransition("Brightness", HideBucky, TransitionType.Fade);
+        SceneTransition.Instance.DoTransition("Brightness", KillBucky, TransitionType.Fade);
     }
     public void IntroClicked()
     {
@@ -56,7 +56,7 @@ public class MenuButtons : MonoBehaviour
     
     #region Private Methods
     
-    private void HideBucky()
+    private void KillBucky()
     {
         Destroy(CharacterMovementController.Instance.gameObject);
         Destroy(UIInventoryGroup.Instance.gameObject);

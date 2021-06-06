@@ -5,7 +5,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class UIInventoryItem : MonoBehaviour,
+    IPointerEnterHandler, IPointerExitHandler,
+    IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     #region Properties and Fields
 
@@ -15,6 +17,7 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public UIInventorySlot CurrentSlot { get; set; }
 
+    private bool _isDragging;
     private Canvas _canvas;
     private GraphicRaycaster _raycaster;
 
@@ -49,6 +52,8 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         // only drag with the left mouse button
         if (eventData.button != PointerEventData.InputButton.Left) return;
 
+        _isDragging = true;
+
         // move the item out of the slot and into the canvas
         transform.SetParent(_canvas.transform);
         transform.SetAsLastSibling();
@@ -67,9 +72,23 @@ public class UIInventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         // only drag with the left mouse button
         if (eventData.button != PointerEventData.InputButton.Left) return;
 
+        _isDragging = false;
+
         var result = new List<RaycastResult>();
         _raycaster.Raycast(eventData, result);
         HandleDragEnd(result);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (_isDragging) return;
+        UIInventoryGroup.Instance.ShowItemInfo(_item);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (_isDragging) return;
+        UIInventoryGroup.Instance.ClearItemInfo();
     }
 
     #endregion

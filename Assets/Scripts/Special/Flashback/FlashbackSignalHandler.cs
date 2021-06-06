@@ -19,6 +19,8 @@ public class FlashbackSignalHandler : MonoBehaviour
 
     #region Public Methods
 
+    public void KillHUD() => Destroy(UIHud.Instance.gameObject);
+
     public void RelinquishControl() => CharacterController.Instance.RelinquishControl(true);
     public void RegainControl() => CharacterController.Instance.RegainControl(true);
 
@@ -41,7 +43,7 @@ public class FlashbackSignalHandler : MonoBehaviour
         CharacterMovementController.Instance.SetLookDirection(direction);
     }
 
-    public void LoadScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null);
+    public void LoadScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null, TransitionType.Fade);
 
     #endregion
 }
