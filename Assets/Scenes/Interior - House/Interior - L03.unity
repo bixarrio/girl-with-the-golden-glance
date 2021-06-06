@@ -277,7 +277,7 @@ Transform:
   m_Children:
   - {fileID: 797921213}
   m_Father: {fileID: 1860241596}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &467458748
 Light:
@@ -1630,8 +1630,8 @@ Transform:
   - {fileID: 1120053899}
   - {fileID: 1563852403}
   - {fileID: 1171844046}
-  - {fileID: 1389916054}
   - {fileID: 467458747}
+  - {fileID: 1389916054}
   - {fileID: 1528243598}
   - {fileID: 997652344}
   - {fileID: 698572280}
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stopAmbience: 0
-  _sceneAmbienceClip: {fileID: 8300000, guid: c4c69d2e890d1bc43a3cb0608a475e84, type: 3}
+  _sceneAmbienceClip: {fileID: 8300000, guid: 0f2a4aea65d02ec48a930b73303ead51, type: 3}
 --- !u!1 &1932736082
 GameObject:
   m_ObjectHideFlags: 0

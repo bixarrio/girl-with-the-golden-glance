@@ -19,6 +19,8 @@ public class FlashbackSignalHandler : MonoBehaviour
 
     #region Public Methods
 
+    public void KillHUD() => Destroy(UIHud.Instance.gameObject);
+
     public void RelinquishControl() => CharacterController.Instance.RelinquishControl(true);
     public void RegainControl() => CharacterController.Instance.RegainControl(true);
 
