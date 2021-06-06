@@ -41,7 +41,7 @@ public class FlashbackSignalHandler : MonoBehaviour
         CharacterMovementController.Instance.SetLookDirection(direction);
     }
 
-    public void LoadScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null);
+    public void LoadScene(string sceneName) => SceneTransition.Instance.DoTransition(sceneName, null, TransitionType.Fade);
 
     #endregion
 }
