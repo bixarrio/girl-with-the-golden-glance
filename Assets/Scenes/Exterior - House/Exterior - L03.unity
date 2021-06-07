@@ -10154,6 +10154,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit - W
       objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Size.z
+      value: 6.4625397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Center.x
+      value: -1.9627011e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Center.z
+      value: -1.803268
+      objectReference: {fileID: 0}
     - target: {fileID: 5859856807043302575, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10244,6 +10256,18 @@ PrefabInstance:
       propertyPath: _overCursor
       value: 
       objectReference: {fileID: 21300000, guid: 4b109e6138fdbb54daec0b204095d40b, type: 3}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Size.z
+      value: 6.4712143
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Center.x
+      value: 2.1091116e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Center.z
+      value: -1.8582158
+      objectReference: {fileID: 0}
     - target: {fileID: 3973310387979379922, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
       propertyPath: _audioClip
       value: 
