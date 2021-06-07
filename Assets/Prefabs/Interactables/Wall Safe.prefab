@@ -28,8 +28,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3566581818184309985}
   - {fileID: 4226114791223239118}
+  - {fileID: 3566581818184309985}
   m_Father: {fileID: 7970628240921107195}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuIcon: {fileID: 21300000, guid: a0930f9982d2ea7498f6670d0be4988e, type: 3}
   Description: Take box
-  Interaction: {fileID: 6409714921153142452}
+  Interaction: {fileID: 3517048631792457141}
   Condition: {fileID: 4869387101810292841}
 --- !u!1 &633261413262549803
 GameObject:
@@ -413,7 +413,7 @@ Transform:
   - {fileID: 6174485691126597826}
   - {fileID: 1890643872426008524}
   m_Father: {fileID: 8662870845854699500}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3517048631792457141
 MonoBehaviour:
@@ -2279,7 +2279,7 @@ Transform:
   - {fileID: 7586900070265511175}
   - {fileID: 7402777301218380138}
   m_Father: {fileID: 8662870845854699500}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4869387101810292841
 MonoBehaviour:

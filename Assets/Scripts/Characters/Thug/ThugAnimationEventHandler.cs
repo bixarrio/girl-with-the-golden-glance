@@ -8,8 +8,8 @@ public class ThugAnimationEventHandler : MonoBehaviour
     
     public void KOBucky()
     {
-        CharacterObjects.Instance.Ragdoll.SetActive(true);
-        CharacterObjects.Instance.Bucky.SetActive(false);
+        CuttyObjects.Instance.Ragdoll.SetActive(true);
+        CuttyObjects.Instance.Bucky.SetActive(false);
     }
 
     #endregion
