@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -46,6 +47,10 @@ public class CutsceneBuckyController : MonoBehaviour
     private void LateUpdate()
     {
         _animator.SetBool("IsWalking", _agent.velocity.magnitude > 0f);
+    }
+
+    private void OnDestroy()
+    {
     }
 
     #endregion

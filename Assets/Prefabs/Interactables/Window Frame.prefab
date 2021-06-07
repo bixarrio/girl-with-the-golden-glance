@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c93795976cdfa4fa314d797b065089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetScene: Thank you
+  _targetScene: End Scene
   _characterSpawnPosition: {fileID: 4168435536555222325}
 --- !u!1 &5620132750552564314
 GameObject:
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b08d9657b28054aad800c0c7167dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _description: I have the box. It's time to go
+  _description: I have the jewels. It's time to go
 --- !u!1001 &7323884146598856822
 PrefabInstance:
   m_ObjectHideFlags: 0

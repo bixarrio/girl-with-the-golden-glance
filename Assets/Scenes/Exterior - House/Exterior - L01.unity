@@ -10288,6 +10288,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit - S
       objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0404238
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Size.z
+      value: 5.766528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Center.x
+      value: -0.020211855
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Center.z
+      value: -2.383264
+      objectReference: {fileID: 0}
     - target: {fileID: 5859856807043302575, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26498,6 +26514,22 @@ PrefabInstance:
       propertyPath: _overCursor
       value: 
       objectReference: {fileID: 21300000, guid: 35f9e18b3b58e6d458789f2dc033ce94, type: 3}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Size.x
+      value: 1.038257
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Size.z
+      value: 7.322355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Center.x
+      value: 0.019128455
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315447815223527544, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
+      propertyPath: m_Center.z
+      value: -3.1611774
+      objectReference: {fileID: 0}
     - target: {fileID: 3973310387979379922, guid: c8ef09930d6491e4ba3f492339c13634, type: 3}
       propertyPath: _audioClip
       value: 

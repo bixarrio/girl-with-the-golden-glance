@@ -20777,7 +20777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_Size.z
-      value: 0.8843123
+      value: 7.086686
       objectReference: {fileID: 0}
     - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_Center.x
@@ -20789,7 +20789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_Center.z
-      value: 4.4872206e-17
+      value: -1.8729395
       objectReference: {fileID: 0}
     - target: {fileID: 3936031524995735633, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25909,6 +25909,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1860241596}
     m_Modifications:
+    - target: {fileID: 653831931610935372, guid: 734c50531cc54f04a85d09f231e0d92f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 653831931610935372, guid: 734c50531cc54f04a85d09f231e0d92f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164579902531705941, guid: 734c50531cc54f04a85d09f231e0d92f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164579902531705941, guid: 734c50531cc54f04a85d09f231e0d92f, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 3758096439
+      objectReference: {fileID: 0}
     - target: {fileID: 7710310327013806091, guid: 734c50531cc54f04a85d09f231e0d92f, type: 3}
       propertyPath: m_Name
       value: Light Fixture

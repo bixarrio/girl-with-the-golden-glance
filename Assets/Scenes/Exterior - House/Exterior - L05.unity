@@ -10419,12 +10419,16 @@ PrefabInstance:
       value: 1.1688696
       objectReference: {fileID: 0}
     - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
+      propertyPath: m_Size.z
+      value: 6.0155654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_Center.x
-      value: 0
+      value: -3.6614566e-16
       objectReference: {fileID: 0}
     - target: {fileID: 3912194266488207373, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_Center.z
-      value: 0
+      value: -2.5077841
       objectReference: {fileID: 0}
     - target: {fileID: 3936031524995735633, guid: bde0ee1205531404aa136c90a5835b54, type: 3}
       propertyPath: m_LocalPosition.x

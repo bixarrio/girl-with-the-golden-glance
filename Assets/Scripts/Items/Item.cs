@@ -6,7 +6,7 @@ public class Item : ScriptableObject
     #region Properties and Fields
 
     public string ItemName;
-    public string ItemDescription;
+    [TextArea] public string ItemDescription;
     public AudioClip NarrativeAudio;
     public Sprite InventoryIcon;
     public GameObject ItemPrefab;
