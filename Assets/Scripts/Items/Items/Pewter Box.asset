@@ -17,5 +17,5 @@ MonoBehaviour:
     Portia has asked for
   NarrativeAudio: {fileID: 0}
   InventoryIcon: {fileID: 21300000, guid: 41f75d16e73279d4692f491cac2126b6, type: 3}
-  ItemPrefab: {fileID: 0}
-  DropCondition: {fileID: 0}
+  ItemPrefab: {fileID: 6046647948544252980, guid: 2bdb89ece29ac2c4b931bdb121ca083b, type: 3}
+  DropCondition: {fileID: 11400000, guid: 7f0b6b3dbf6e97d47b352388692f3f3e, type: 2}

@@ -68,9 +68,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="61.032853"
-     inkscape:cy="786.35605"
+     inkscape:zoom="0.25"
+     inkscape:cx="-437.76249"
+     inkscape:cy="757.66276"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -447,7 +447,7 @@
     </g>
     <g
        id="g916"
-       transform="translate(13.898015,-71.628233)"
+       transform="translate(-43.251985,-113.96157)"
        inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\ui_menu.png"
        inkscape:export-xdpi="18.863157"
        inkscape:export-ydpi="18.863157">
@@ -468,7 +468,8 @@
        id="g1042"
        inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\ui_inventory.png"
        inkscape:export-xdpi="18.863157"
-       inkscape:export-ydpi="18.863157">
+       inkscape:export-ydpi="18.863157"
+       transform="translate(37.64872,-183.62351)">
       <circle
          style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
          id="circle1011"
