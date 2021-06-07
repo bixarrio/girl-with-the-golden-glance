@@ -92,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Blank.unity
     guid: 9a814171e6d7cac49a0f0080c0847ba2
+  - enabled: 1
+    path: Assets/Scenes/Outro Cutscene.unity
+    guid: 15e70cf4f3fab924e8ebaae79cb99efb
   m_configObjects: {}

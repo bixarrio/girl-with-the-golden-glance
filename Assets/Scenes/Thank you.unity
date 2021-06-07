@@ -2405,7 +2405,7 @@ MonoBehaviour:
   _scrollSpeed: 50
   _startDelay: 2
   _scrollEndOffset: 2000
-  _targetScene: Menu
+  _targetScene: Outro Cutscene
   _transitionType: 1
 --- !u!1 &1659442310
 GameObject:

@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04bfe27e8162c9d49bda61ab904ca69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetScene: Menu
+  _targetScene: Thank you
   _transitionType: 1
 --- !u!95 &48129169 stripped
 Animator:
