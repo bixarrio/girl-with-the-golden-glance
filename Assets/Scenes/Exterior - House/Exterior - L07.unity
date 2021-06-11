@@ -23433,9 +23433,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1860241596}
     m_Modifications:
+    - target: {fileID: 2122378690782314967, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3751935387560986016, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
       propertyPath: m_Name
       value: Dog house
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751935387560986016, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3751935387560986017, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
       propertyPath: m_RootOrder
@@ -23447,7 +23455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3751935387560986017, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.034
       objectReference: {fileID: 0}
     - target: {fileID: 3751935387560986017, guid: bf652b7d740f4c641b9165c9621e096f, type: 3}
       propertyPath: m_LocalPosition.z
