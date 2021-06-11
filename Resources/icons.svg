@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="icons.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient916">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop912" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop914" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect931"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect920"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect900"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect912"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient916"
+       id="linearGradient918"
+       x1="77.552666"
+       y1="567.48853"
+       x2="77.552666"
+       y2="451.77502"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-275.7428,-235.11998)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.60792683"
+     inkscape:cx="402.4802"
+     inkscape:cy="773.81901"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-others="true"
+     inkscape:snap-nodes="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#9bff00;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+       id="rect833"
+       width="487.58929"
+       height="458.8631"
+       x="-127"
+       y="-73.327377" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#0a0a0a;fill-opacity:1;stroke:none;stroke-width:0.555423;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992683"
+       id="rect953"
+       width="38"
+       height="38"
+       x="-247.20627"
+       y="376.90253"
+       inkscape:export-filename="C:\Users\bbdnet0499\Desktop\gwtgg - itch.io\Default WebGL\TemplateData\webgl-logo-2.png"
+       inkscape:export-xdpi="25.399996"
+       inkscape:export-ydpi="25.399996" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+       id="path836"
+       cx="-58.359524"
+       cy="-3.6285694"
+       r="43.089287"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786" />
+    <g
+       id="g889"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-114.90476,170.84524)">
+      <circle
+         style="fill:#ffffff;fill-opacity:0;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle838"
+         cx="39.998604"
+         cy="-5.0022559"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g883"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <path
+           id="path840"
+           style="fill:#0a0a0a;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+           d="M 39.979472,-18.575093 A 12.093946,12.093946 0 0 0 27.929562,-6.4812581 12.093946,12.093946 0 0 0 40.023396,5.6125773 12.093946,12.093946 0 0 0 52.117749,-6.4812581 12.093946,12.093946 0 0 0 51.070266,-11.404472 5.2706484,5.2706484 0 0 1 46.012179,-7.6160724 5.2706484,5.2706484 0 0 1 40.7417,-12.886552 a 5.2706484,5.2706484 0 0 1 3.45095,-4.946985 12.093946,12.093946 0 0 0 -4.169254,-0.741556 12.093946,12.093946 0 0 0 -0.04392,0 z" />
+        <path
+           id="path842"
+           style="fill:none;fill-opacity:1;stroke:#0a0a0a;stroke-width:3.96875;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 71.607905,-3.956503 C 57.57626,10.555039 45.361651,10.5286 40.147079,10.5286 c -5.268407,0 -16.761,0.880273 -31.460823,-14.485103 14.165285,-14.566261 26.246253,-14.485101 31.460823,-14.485101 5.080936,0 17.429175,-0.07847 31.460826,14.485101 z"
+           sodipodi:nodetypes="cscsc" />
+      </g>
+    </g>
+    <g
+       id="g904"
+       inkscape:export-xdpi="9.4315796"
+       inkscape:export-ydpi="9.4315796"
+       transform="translate(-187.47619,90.714289)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle864"
+         cx="108.64506"
+         cy="135.11464"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g898"
+         transform="translate(1.0690781,3.7417734)">
+        <rect
+           style="fill:#ffffff;fill-opacity:0;stroke:#0a0a0a;stroke-width:3.969;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect891"
+           width="30.735994"
+           height="49.731884"
+           x="93.277061"
+           y="103.51491" />
+        <rect
+           style="fill:#0a0a0a;fill-opacity:1;stroke:#0a0a0a;stroke-width:3.77809;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect893"
+           width="27.85379"
+           height="49.731888"
+           x="109.63725"
+           y="163.60309"
+           transform="matrix(0.90197174,-0.43179507,0,1,0,0)" />
+      </g>
+    </g>
+    <g
+       id="g940"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-190.5,123.97619)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle906"
+         cx="109.97311"
+         cy="180.86441"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path908"
+         style="fill:#0a0a0a;fill-opacity:1;stroke:none;stroke-width:15.0009;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:transform-center-x="1.212183e-06"
+         inkscape:transform-center-y="-3.4493587"
+         d="m 449.39844,567.3125 c -37.43985,46.89165 -34.19542,60.4567 -45.63477,73.62695 -7.70993,8.87645 -26.99248,10.99916 -46.91406,24.93946 -34.86507,24.39707 -13.85393,96.06237 8.83594,68.76953 -22.7361,-48.09615 72.6994,-63.58526 58.20117,-1.97461 31.4657,9.32031 27.17295,-36.64377 23.26953,-52.00195 1.61802,-31.17196 37.33556,-55.78973 45.79883,-70.53907 0.38203,-16.76965 -28.82971,-37.1593 -43.55664,-42.82031 z m -53.41797,154.31641 -45.16211,78.22265 h 90.32226 z"
+         transform="scale(0.26458333)" />
+    </g>
+    <g
+       id="g880"
+       transform="translate(360.58929,-334.13095)">
+      <circle
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle855"
+         cx="-48.593033"
+         cy="308.9837"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g861"
+         transform="translate(-156.16901,177.61082)">
+        <rect
+           style="fill:#ffffff;fill-opacity:0;stroke:#0a0a0a;stroke-width:3.969;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect857"
+           width="30.735994"
+           height="49.731884"
+           x="93.277061"
+           y="103.51491" />
+        <rect
+           style="fill:#0a0a0a;fill-opacity:1;stroke:#0a0a0a;stroke-width:3.77809;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect859"
+           width="27.85379"
+           height="49.731888"
+           x="109.63725"
+           y="163.60309"
+           transform="matrix(0.90197174,-0.43179507,0,1,0,0)" />
+      </g>
+    </g>
+    <g
+       id="g948">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle888"
+         cx="308.42856"
+         cy="86.934525"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path869"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:transform-center-x="-2.3391981"
+         inkscape:transform-center-y="-3.2342041"
+         d="m 289.78952,55.396979 1.12442,54.367671 10.07917,-5.81921 12.33187,21.35943 25.23883,-14.57164 -12.33187,-21.359441 10.07916,-5.81921 z" />
+    </g>
+    <g
+       id="g899"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_s_30.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(260.04762,45.357143)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle894"
+         cx="61.232143"
+         cy="128.5119"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path874"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="2.3392019"
+         inkscape:transform-center-y="3.2342059"
+         d="m 78.366396,161.92057 -1.12442,-54.36767 -10.07917,5.81921 -12.33187,-21.359426 -25.23883,14.571636 12.33187,21.35944 -10.07916,5.81921 z" />
+    </g>
+    <g
+       id="g905"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_e_60.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(244.17262,164.79762)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle901"
+         cx="73.327377"
+         cy="151.19048"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path884"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="-3.2341981"
+         inkscape:transform-center-y="2.3391959"
+         d="m 106.60183,133.73685 -54.367659,1.12442 5.81921,10.07917 -21.359435,12.33187 14.571645,25.23883 21.35944,-12.33186 5.8192,10.07916 z" />
+    </g>
+    <g
+       id="g911"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\arrow_w_60.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(262.31548,-6.0476191)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle907"
+         cx="49.136906"
+         cy="260.80359"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path886"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64553;stroke-opacity:1"
+         inkscape:transform-center-x="3.2342019"
+         inkscape:transform-center-y="-2.3391941"
+         d="m 16.618402,281.09585 54.36766,-1.12442 -5.81921,-10.07917 21.359438,-12.33187 -14.571648,-25.23883 -21.35944,12.33186 -5.8192,-10.07916 z" />
+    </g>
+    <g
+       id="g957"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Textures\options.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(136.82738,63.5)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle913"
+         cx="113.46587"
+         cy="182.14656"
+         r="43.089287"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:91.3739px;line-height:125%;font-family:Lemon;-inkscape-font-specification:'Lemon, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.89635;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="85.779572"
+         y="216.41177"
+         id="text942"><tspan
+           sodipodi:role="line"
+           id="tspan940"
+           x="85.779572"
+           y="216.41177"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:91.3739px;font-family:Lemon;-inkscape-font-specification:'Lemon, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.89635;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">?</tspan></text>
+    </g>
+    <g
+       id="g965"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\cursor_default.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(212.42262,-49.136904)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle961"
+         cx="40.257641"
+         cy="220.17432"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <circle
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.07996;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path959"
+         cx="40.257641"
+         cy="220.17432"
+         r="13.960018" />
+    </g>
+    <g
+       id="g894"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\close.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(210.15476,73.327381)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle879"
+         cx="31.749964"
+         cy="252.48795"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="rect881"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.64543;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 6.6265529,241.26281 11.2253201,11.22532 -11.2253201,11.22532 13.8979101,13.89791 11.22532,-11.22532 11.22531,11.22531 13.89828,-13.89828 -11.22532,-11.22531 11.22532,-11.22532 -13.89791,-13.89791 -11.22532,11.22532 -11.22532,-11.22532 z" />
+    </g>
+    <g
+       id="g914"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\give.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-60.430099,-144.92954)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle896"
+         cx="-17.386906"
+         cy="244.92857"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="path898"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.327552px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -13.455929,224.94234 -10.687719,18.51101 h 21.3749222 z m 23.266797,16.99173 c -2.567895,0.0665 -6.9312233,2.75737 -12.8100705,4.34082 -7.0129375,1.88893 -15.6844835,-0.37522 -22.6740685,-0.10852 -3.07618,0.32194 -4.686712,1.21609 -7.482747,2.67942 -5.267777,3.16802 -12.858953,11.91555 -10.816394,13.96917 2.072495,3.27612 6.218169,4.14655 9.656776,5.25653 2.977533,1.30654 5.526714,-1.5422 6.358784,-4.14549 1.149368,-2.91419 2.333717,-6.62899 5.727816,-7.54475 6.408835,-0.39432 14.7886904,-1.76496 21.1470289,-3.47886 3.681704,-1.03451 12.3568891,-5.37325 12.3806391,-10.54923 -0.397897,-0.31005 -0.895173,-0.43444 -1.487764,-0.41909 z" />
+    </g>
+    <g
+       id="g953"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\use.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786"
+       transform="translate(-135.77292,179.60512)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle916"
+         cx="105.2793"
+         cy="156.95341"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786"
+         r="43.089287" />
+      <path
+         id="path940"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.46512;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 98.324782,133.80372 a 16.303693,16.303693 0 0 0 -3.260911,0.3293 l 8.885169,8.88517 c 2.06213,2.06212 2.06213,5.38222 0,7.44433 l -5.051849,5.05186 c -2.062117,2.06212 -5.382211,2.06212 -7.444332,0 l -9.025453,-9.02546 a 16.303693,16.303693 0 0 0 -0.406574,3.61815 16.303693,16.303693 0 0 0 16.30395,16.30395 16.303693,16.303693 0 0 0 3.643108,-0.41252 c 0.0948,0.11186 0.19161,0.22252 0.2972,0.32811 l 12.2299,12.22989 c 2.06212,2.06213 5.38281,2.06213 7.44493,0 l 5.05125,-5.05125 c 2.06213,-2.06212 2.06213,-5.38222 0,-7.44434 l -12.22989,-12.23048 c -0.1506,-0.15061 -0.30951,-0.28689 -0.47255,-0.41549 a 16.303693,16.303693 0 0 0 0.3394,-3.30787 16.303693,16.303693 0 0 0 -16.303348,-16.30335 z" />
+    </g>
+    <g
+       id="g909"
+       transform="translate(114.90476,-109.6131)"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\cursor_up_down.png"
+       inkscape:export-xdpi="9.4315786"
+       inkscape:export-ydpi="9.4315786">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle903"
+         cx="128.89"
+         cy="209.99057"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <g
+         id="g901"
+         transform="matrix(0.48774923,0,0,0.48774923,73.213951,142.20609)">
+        <path
+           id="rect892"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.43958;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 114.14873,59.404763 88.350622,104.08879 h 12.648118 v 23.71604 h 26.29998 v -23.71604 h 12.6485 z" />
+        <path
+           id="path897"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.43958;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 114.14873,218.54329 88.350623,173.85926 h 12.648117 v -23.71604 h 26.29998 v 23.71604 h 12.6485 z" />
+      </g>
+    </g>
+    <g
+       id="g916"
+       transform="translate(-43.251985,-113.96157)"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\ui_menu.png"
+       inkscape:export-xdpi="18.863157"
+       inkscape:export-ydpi="18.863157">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.323;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle897"
+         cx="84.61869"
+         cy="104.29037"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <path
+         id="rect899"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:3.43958;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 76.687186,75.041921 v 5.765038 a 24.786705,24.786705 0 0 0 -3.064837,1.270127 l -4.076736,-4.076735 -11.216952,11.21695 4.076737,4.076736 a 24.786705,24.786705 0 0 0 -1.269446,3.064837 h -5.765719 v 15.863006 h 5.765038 a 24.786705,24.786705 0 0 0 1.26945,3.06552 l -4.07606,4.07606 11.216952,11.21695 4.076736,-4.07674 a 24.786705,24.786705 0 0 0 3.064837,1.27013 v 5.76503 h 15.863006 v -5.76503 a 24.786705,24.786705 0 0 0 3.064837,-1.27013 l 4.076735,4.07674 11.216956,-11.21695 -4.07606,-4.07606 a 24.786705,24.786705 0 0 0 1.26945,-3.06552 h 5.76504 V 96.358874 h -5.76504 a 24.786705,24.786705 0 0 0 -1.27013,-3.064837 l 4.07674,-4.076736 -11.216956,-11.21695 -4.076735,4.076735 a 24.786705,24.786705 0 0 0 -3.064837,-1.270127 v -5.765038 z m 7.923031,20.820831 a 8.4274803,8.4274803 0 0 1 0.0081,0 8.4274803,8.4274803 0 0 1 8.427282,8.427288 8.4274803,8.4274803 0 0 1 -8.427282,8.42729 8.4274803,8.4274803 0 0 1 -8.427288,-8.42729 8.4274803,8.4274803 0 0 1 8.419153,-8.427288 z" />
+    </g>
+    <g
+       id="g1042"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\ui_inventory.png"
+       inkscape:export-xdpi="18.863157"
+       inkscape:export-ydpi="18.863157"
+       transform="translate(37.64872,-183.62351)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke-width:1.32292;stroke-linejoin:round"
+         id="circle1011"
+         cx="97.354889"
+         cy="174.30171"
+         r="43.089287"
+         inkscape:export-xdpi="9.4315786"
+         inkscape:export-ydpi="9.4315786" />
+      <g
+         id="g1030"
+         transform="translate(-2.9668084,-86.440893)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 75.280797,275.61816 c -0.07645,6.70622 -2.060067,12.40644 -1.838126,19.22123 3.121816,1.7634 19.635324,2.42178 19.635324,2.42178 l 0.648605,-4.23202 13.3297,0.0412 0.59132,4.32132 c 0,0 15.77368,-0.44388 19.55931,-2.73747 -0.14322,-7.90625 -1.37989,-12.14653 -1.84001,-18.84327 0,0 5.19402,-0.28688 7.78884,-1.04754 -0.11796,-16.28902 -1.57185,-31.85032 -6.92228,-46.49153 -5.16334,-2.76108 -12.06722,-3.3676 -12.06722,-3.3676 -1.12253,-2.3386 -4.47676,-1.49863 -7.10937,-4.39658 -3.47451,-1.02706 -8.908093,-0.51 -13.376842,-0.28063 -1.475331,2.47444 -6.525843,3.31921 -7.296458,4.58367 -2.814301,0.86391 -3.770557,0.1033 -11.599497,2.99342 -5.02261,12.71227 -7.219834,30.26128 -7.296458,46.49153 3.197428,1.26316 7.793162,1.32249 7.793162,1.32249 z"
+           id="path934"
+           sodipodi:nodetypes="ccccccccccccccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.43958;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 93.586503,293.00454 c 0,-8.56492 5.558607,-31.25647 5.332026,-43.0304 -0.226581,-11.77393 -4.877766,-22.68285 -4.396583,-26.94076 2.632703,-2.57412 8.083854,-2.72574 11.412414,-1e-5 0.52222,4.40953 -3.93296,14.98276 -3.92887,26.84723 0.004,11.86448 4.36987,33.07779 4.95785,43.21748 -6.05367,0.0369 -13.376837,-0.0935 -13.376837,-0.0935 z"
+           id="path966"
+           sodipodi:nodetypes="szcczccs" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 76.177854,275.69883 c 0.280634,-3.64822 5.706205,-34.6114 4.209497,-41.72077"
+           id="path968"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 124.63658,275.79238 c -0.46773,-2.61924 -5.14494,-37.04356 -4.02241,-41.25305"
+           id="path970" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 85.915867,224.99781 c -0.374176,0.8419 -4.209494,5.51911 -3.180506,6.73519 1.028986,1.21608 8.044812,-1.49671 9.260888,-0.74836 1.216078,0.74836 -9.167344,2.71279 -9.354434,3.92887 -0.187087,1.21607 15.341272,11.13177 15.247728,14.96709"
+           id="path976" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 114.07271,224.62363 c 0.65482,0.74835 3.92887,5.89329 3.74178,6.82873 -0.18709,0.93545 -8.51254,-1.4967 -9.26089,-0.84189 -0.74836,0.6548 9.35443,2.89987 9.72861,3.83531 0.37418,0.93545 -15.809,11.78659 -15.15419,15.43482"
+           id="path978" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 80.022575,271.02162 c 0.374177,-1.6838 2.338607,-12.34785 2.245064,-13.84456"
+           id="path996" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.85208;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 120.71201,270.70476 c 0,-1.21608 -2.52334,-12.40517 -2.61689,-13.99542"
+           id="path998"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+    <rect
+       style="fill:url(#linearGradient918);fill-opacity:1;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round"
+       id="rect910"
+       width="28.312878"
+       height="115.71349"
+       x="-226.50302"
+       y="215.42406"
+       inkscape:export-filename="D:\Unity\Projects\GameJams\GameDev.tv\girl-with-the-golden-glance\Assets\Sprites\ui_fade.png"
+       inkscape:export-xdpi="28.707787"
+       inkscape:export-ydpi="28.707787" />
+    <g
+       id="g951"
+       transform="matrix(0.36736421,0,0,0.36736421,180.0539,339.869)"
+       inkscape:export-filename="C:\Users\bbdnet0499\Desktop\gwtgg - itch.io\Default WebGL\TemplateData\fullscreen-button.png"
+       inkscape:export-xdpi="25.399996"
+       inkscape:export-ydpi="25.399996">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992683"
+         id="rect922"
+         width="100"
+         height="100"
+         x="57.241249"
+         y="137.8714"
+         rx="6.7704725"
+         ry="6.7704725" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#fffff7;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992683"
+         id="rect924"
+         width="50"
+         height="50"
+         x="57.241249"
+         y="187.8714"
+         rx="5.5394759"
+         ry="5.5394759" />
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 107.24125,187.8714 36.18046,-36.18047 v 11.73505"
+         id="path926" />
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 107.24125,187.8714 36.18046,-36.18047 h -11.11412"
+         id="path932" />
+    </g>
+    <rect
+       style="fill:#cdcdcd;fill-opacity:1;stroke:none;stroke-width:3.20252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992683"
+       id="rect955"
+       width="141"
+       height="18"
+       x="33.947342"
+       y="229.79739"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\bbdnet0499\Desktop\gwtgg - itch.io\Default WebGL\TemplateData\progress-bar-full-dark.png"
+       inkscape:export-xdpi="25.399996"
+       inkscape:export-ydpi="25.399996" />
+  </g>
+</svg>

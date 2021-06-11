@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a017adaf90f126488ad8d222de36a00, type: 3}
+  m_Name: Small Key
+  m_EditorClassIdentifier: 
+  ItemName: A Small Key
+  ItemDescription: It's a small key. Probably unlocks something small. And valuable
+  NarrativeAudio: {fileID: 0}
+  InventoryIcon: {fileID: 21300000, guid: 1e898158903f0dc4ab99789300f53bb5, type: 3}
+  ItemPrefab: {fileID: 1084925814150638712, guid: 25c0bef82316c3e429cc5106a5c23638, type: 3}
+  DropCondition: {fileID: 11400000, guid: d651d8da1fcbb694da85a0b8226af578, type: 2}
