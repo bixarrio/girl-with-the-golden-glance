@@ -1279,7 +1279,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2116534952
 Transform:
@@ -1304,6 +1304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2116534952}
     m_Modifications:
+    - target: {fileID: 992033606804403287, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1864843825647955415, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1363,6 +1367,14 @@ PrefabInstance:
     - target: {fileID: 2431063735029839587, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
       propertyPath: m_Name
       value: Desk Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431063735029839587, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917886272632057968, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7904485403173888302, guid: 71aa74351af342c47b71ac9c016830a2, type: 3}
       propertyPath: m_Range
@@ -1596,9 +1608,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2116534952}
     m_Modifications:
+    - target: {fileID: 2622916756518997124, guid: 5aba6dbb029dac648be16c3766e60acc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2929329003229861454, guid: 5aba6dbb029dac648be16c3766e60acc, type: 3}
       propertyPath: m_Name
       value: Desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929329003229861454, guid: 5aba6dbb029dac648be16c3766e60acc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2929329003229861455, guid: 5aba6dbb029dac648be16c3766e60acc, type: 3}
       propertyPath: m_RootOrder

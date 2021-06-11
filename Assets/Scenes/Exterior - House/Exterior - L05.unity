@@ -21760,9 +21760,25 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -20.787
       objectReference: {fileID: 0}
+    - target: {fileID: 6319552017821595259, guid: 7b3445c494fa16c48894e96db393c310, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7553632522840409833, guid: 7b3445c494fa16c48894e96db393c310, type: 3}
       propertyPath: m_Name
       value: Bicycle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553632522840409833, guid: 7b3445c494fa16c48894e96db393c310, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109951735050664508, guid: 7b3445c494fa16c48894e96db393c310, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110744224455648487, guid: 7b3445c494fa16c48894e96db393c310, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b3445c494fa16c48894e96db393c310, type: 3}

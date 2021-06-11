@@ -18,6 +18,9 @@ public class UIScroller : MonoBehaviour
     private bool _done = false;
     private float _timer = 0f;
 
+    private float _scaledEndOffset;
+    private float _scaledScrollSpeed;
+
     #endregion
 
     #region Unity Methods
@@ -26,6 +29,8 @@ public class UIScroller : MonoBehaviour
     {
         _rectTransform = GetComponent<RectTransform>();
         Debug.Assert(_rectTransform != null);
+
+        CalculateScaledValues();
     }
 
     private void Update()
@@ -39,15 +44,40 @@ public class UIScroller : MonoBehaviour
 
         // scroll
         var pos = _rectTransform.position;
-        pos.y += _scrollSpeed * Time.deltaTime;
+        pos.y += _scaledScrollSpeed * Time.deltaTime;
         _rectTransform.position = pos;
 
         // end if we're done
-        if (_rectTransform.position.y > _scrollEndOffset && !_done)
+        if (_rectTransform.position.y > _scaledEndOffset && !_done)
         {
             _done = true;
             SceneTransition.Instance.DoTransition(_targetScene, null, _transitionType);
         }
+    }
+
+    #endregion
+
+    #region Private Methods
+
+    private void CalculateScaledValues()
+    {
+        // This is horrible, but it works and this is a jam
+        // get a reference size
+        var corners = new Vector3[4];
+
+        _rectTransform.GetLocalCorners(corners);
+        var referenceHeight = corners[1].y - corners[0].y;
+
+        // get the current height
+        _rectTransform.GetWorldCorners(corners);
+        var scaledHeight = corners[1].y - corners[0].y;
+
+        Debug.Log($"Reference Height: {referenceHeight}");
+        Debug.Log($"Scaled Height: {scaledHeight}");
+
+        var ratio = scaledHeight / referenceHeight;
+        _scaledScrollSpeed = _scrollSpeed * ratio;
+        _scaledEndOffset = _scrollEndOffset * ratio;
     }
 
     #endregion
