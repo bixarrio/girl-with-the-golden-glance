@@ -40,5 +40,11 @@ public class InventorySlot
         UpdateUI();
     }
 
+    public void RemoveItemFromSlot()
+    {
+        _item = null;
+        UpdateUI();
+    }
+
     #endregion
 }

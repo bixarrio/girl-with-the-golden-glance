@@ -108,6 +108,7 @@ public class UIInventoryItem : MonoBehaviour,
             {
                 if (_item.DropCondition?.CanDrop() ?? true) // no condition == true
                 {
+                    Debug.Log($"Attempting to drop item {_item}");
                     dropped = CharacterInventoryController.Instance.TryRemoveItem(_item, true);
                     continue;
                 }
@@ -116,7 +117,7 @@ public class UIInventoryItem : MonoBehaviour,
             // Now, check if we're moving stuff around
             var slot = hit.gameObject.GetComponent<UIInventorySlot>();
             if (slot == null) continue; // the hit was not on a slot
-            if (slot.Filled) continue; // We could be combining items here
+            if (slot.Filled) continue; // We could be combining/swapping items here
 
             CurrentSlot.CurrentInventoryItem = null; // remove this item from its slot
             CurrentSlot = slot; // set the new slot
