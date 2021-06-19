@@ -52,6 +52,27 @@ public class CharacterInventoryController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab)) _inventoryCanvas.enabled = !_inventoryCanvas.enabled;
     }
 
+#if UNITY_EDITOR
+
+    private void OnGUI()
+    {
+        using (new GUILayout.AreaScope(new Rect(10, 50, 200, 500)))
+        {
+            foreach (var slot in _handEquipped.IterateSlots())
+                GUILayout.Label($"Hand: {slot.Item?.ItemName ?? "Empty"}");
+            foreach (var slot in _topLeftPocket.IterateSlots())
+                GUILayout.Label($"Top Left Pocket: {slot.Item?.ItemName ?? "Empty"}");
+            foreach (var slot in _topRightPocket.IterateSlots())
+                GUILayout.Label($"Top Right Pocket: {slot.Item?.ItemName ?? "Empty"}");
+            foreach (var slot in _leftPocketInventory.IterateSlots())
+                GUILayout.Label($"Left Pocket: {slot.Item?.ItemName ?? "Empty"}");
+            foreach (var slot in _rightPocketInventory.IterateSlots())
+                GUILayout.Label($"Right Pocket: {slot.Item?.ItemName ?? "Empty"}");
+        }
+    }
+
+#endif
+
     #endregion
 
     #region Public Methods
@@ -67,6 +88,8 @@ public class CharacterInventoryController : MonoBehaviour
 
     public bool TryAddItem(Item item)
     {
+        Debug.Log($"Adding item {item}");
+
         // let's first check the hand
         if (_handEquipped.HasFreeSlot())
         {

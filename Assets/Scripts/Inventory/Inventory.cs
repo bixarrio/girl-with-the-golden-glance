@@ -43,6 +43,7 @@ public class Inventory
     {
         var slot = _slots.FirstOrDefault(s => s.UIInventorySlot.CurrentInventoryItem?.HasItem(item) ?? false);
         if (slot == null) return false;
+        slot.RemoveItemFromSlot();
         return slot.UIInventorySlot.TryRemoveItem(checkConditions);
     }
 
@@ -53,6 +54,12 @@ public class Inventory
             s.UIInventorySlot.TryRemoveItem();
             s.UpdateUI();
         });
+    }
+
+    public IEnumerable<InventorySlot> IterateSlots()
+    {
+        foreach (var slot in _slots)
+            yield return slot;
     }
 
     public void ShuffleInventory() => ShuffleItems();
