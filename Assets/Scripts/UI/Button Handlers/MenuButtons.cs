@@ -52,10 +52,16 @@ public class MenuButtons : MonoBehaviour
         SceneTransition.Instance.DoTransition("Intro Cutscene", Cleanup, TransitionType.Fade);
     }
 
+    public void QuitClicked()
+    {
+        if (Application.platform != RuntimePlatform.WebGLPlayer)
+            Application.Quit();
+    }
+
     #endregion
-    
+
     #region Private Methods
-    
+
     private void KillBucky()
     {
         Destroy(CharacterMovementController.Instance.gameObject);
